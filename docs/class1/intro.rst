@@ -266,21 +266,21 @@ are activated on this data collection device.
 
 |image6|
 
-.. |image1| image:: /_static/class3//image1.png
+.. |image1| image:: images/image1.png
    :width: 6.25000in
    :height: 3.42500in
-.. |image2| image:: /_static/class3//image2.png
+.. |image2| image:: images/image2.png
    :width: 6.25000in
    :height: 1.97917in
-.. |image3| image:: /_static/class3//image3.png
+.. |image3| image:: images/image3.png
    :width: 6.49167in
    :height: 1.71667in
-.. |image4| image:: /_static/class3//image4.png
+.. |image4| image:: images/image4.png
    :width: 6.48333in
    :height: 1.61250in
-.. |image5| image:: /_static/class3//image5.png
+.. |image5| image:: images/image5.png
    :width: 6.50000in
    :height: 1.42083in
-.. |image6| image:: /_static/class3//image6.png
+.. |image6| image:: images/image6.png
    :width: 6.49167in
    :height: 3.32917in
