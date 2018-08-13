@@ -1,5 +1,5 @@
-Module 3 – Automate device backups and archiving
-=================================================
+Module 3: Automate device backups and archiving
+================================================
 
 BIG-IQ provides the ability to backup individual or groups of managed
 devices on an ad-hoc or a scheduled basis. The admin can decide how long

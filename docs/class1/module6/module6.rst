@@ -1,5 +1,5 @@
-Class 6 - Local Traffic Management Virtual Servers
-====================================================
+Module 6: Local Traffic Management Virtual Servers
+===================================================
 
 Goal:
 

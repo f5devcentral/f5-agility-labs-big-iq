@@ -1,5 +1,5 @@
-Module 2: Create a new virtual server by cloning an existing virtual server 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Module 2: Create a new virtual server by cloning an existing virtual server
+============================================================================
 
 BIG-IQ allows you to clone an existing virtual server to create a new virtual server. This cloned virtual can be deployed to the same BIG-IP device/cluster or to a new BIG-IP device/cluster. Cloning can be used to migrate a virtual server or to make a virtual server that is similar to one that already exists.
 

@@ -1,5 +1,5 @@
-Create Application Service Template by Cloning
------------------------------------------------
+Lab 2: Create Application Service Template by Cloning
+=====================================================
 
 Log out of **larry** and log back in as **marco**.
 

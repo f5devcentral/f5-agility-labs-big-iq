@@ -1,4 +1,4 @@
-Class 4 - Role Management 
+Module 4: Role Management
 =========================
 
 Goal:

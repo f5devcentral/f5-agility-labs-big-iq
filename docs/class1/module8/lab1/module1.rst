@@ -1,5 +1,5 @@
 Module 1: Create personas in BIG-IQ for Application Deployment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==============================================================
 
 We will be using 4 main personas for this lab:
 

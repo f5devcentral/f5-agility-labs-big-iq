@@ -1,5 +1,5 @@
-Task 6.5: Decommission a virtual server
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Module 5: Decommission a virtual server
+========================================
 
 BIG-IQ can be used to remove virtual servers, and other objects that are no longer needed. The same staged change workflow applies for removal of objects.
 

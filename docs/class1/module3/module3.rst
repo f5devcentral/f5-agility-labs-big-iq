@@ -1,5 +1,5 @@
-Class 3 - License Management 
-=============================
+Module 3: License Management
+============================
 
 Goal:
 

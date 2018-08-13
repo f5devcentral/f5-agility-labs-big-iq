@@ -1,5 +1,5 @@
-Module 2 – Review BIG-IP device cluster status and configurations
-==================================================================
+Module 2: Review BIG-IP device cluster status and configurations
+=================================================================
 
 BIG-IQ provides visibility in to the BIG-IP cluster configuration and status. You can review the sync status, drill down to review cluster configuration, and initiate cluster sync activities from BIG-IQ.
 

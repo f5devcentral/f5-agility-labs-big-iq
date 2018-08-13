@@ -1,4 +1,4 @@
-Step 1. Create a device group
+Step 1: Create a device group
 -----------------------------
 
 In this scenario, we are going to create a group of all of the devices in our Boston data center and schedule a nightly backup that archives a copy off to our archive for DR purposes.

@@ -1,7 +1,7 @@
 Module 1: Stage a new application on BIG-IQ for deployment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===========================================================
 
-1.  We will build our application starting at the nodes and making our way to the virtual servers. 
+1.  We will build our application starting at the nodes and making our way to the virtual servers.
 
 Navigate to the **Configuration** tab on the top menu bar.
 

@@ -1,5 +1,5 @@
 Module 1: Move a certificate from unmanaged to managed state
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================================================
 
 **From the TMUI of the BIG-IQ Centralized Management system BIG_IQ_CM_v6.0.0:**
 

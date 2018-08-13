@@ -1,5 +1,5 @@
 Module 1: Add licensing base-key to BIG-IQ for consumption
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================================================
 
 **Step 1: Activate Purchased License Pool**
 

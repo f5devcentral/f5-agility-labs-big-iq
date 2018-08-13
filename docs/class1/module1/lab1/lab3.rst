@@ -1,4 +1,4 @@
-Step 3. Export Inventory
+Step 3: Export Inventory
 ------------------------
 
 Click on the BOS-vBIGIP01.termmarc.com device link to review the device Properties, Health, and Services information for the device.

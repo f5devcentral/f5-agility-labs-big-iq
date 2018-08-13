@@ -1,5 +1,5 @@
-Module 2 Assign Pool Licensing to a device BIG-IP
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Module 2: Assign Pool Licensing to a device BIG-IP
+==================================================
 
 Now that we have all these different key types available in BIG-IQ, we will use BIG-IQ to push a license to a device.
 

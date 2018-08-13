@@ -1,4 +1,4 @@
-Step 2. Import Services on the new device
+Step 2: Import Services on the new device
 -------------------------------------------
 
 On the Device Inventory screen, click the link in the Services column for BOS-vBIGIP01. (you may need to scroll right to see the services column)

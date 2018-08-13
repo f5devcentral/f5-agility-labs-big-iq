@@ -1,5 +1,5 @@
 Module 2: Deploy multiple changes and restore single change
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===========================================================
 
 In this deployment, we will be using the 1\ :sup:`st` change made to app1pool, as well as 2\ :sup:`nd` change made to app2pool in the previous task 5.1, to demonstrate the ability to partially roll back one of the two changes for this deployment.
 

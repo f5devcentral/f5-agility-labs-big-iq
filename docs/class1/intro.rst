@@ -1,5 +1,5 @@
 Overview
-=========================
+========
 
 This document details the lab exercises and demonstrations that comprise
 the hands-on component of the BIG-IQ v6.0. The environment is setup with

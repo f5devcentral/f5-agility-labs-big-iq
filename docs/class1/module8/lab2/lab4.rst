@@ -1,5 +1,5 @@
-Security workflows
---------------------
+Lab 4: Security workflows
+=========================
 
 Connect as \ **larry**
 

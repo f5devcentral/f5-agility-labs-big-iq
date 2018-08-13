@@ -1,5 +1,5 @@
 Module 2: Application Templates & Deployment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================================
 
 In this module, we will learn how to use Application Templates and how
 to deploy an \ **Application**.

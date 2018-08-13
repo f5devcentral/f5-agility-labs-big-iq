@@ -1,4 +1,4 @@
-Class 7 - BIG-IQ DNS Sync Group Administration
+Module 7: BIG-IQ DNS Sync Group Administration
 ===============================================
 
 Goal:
