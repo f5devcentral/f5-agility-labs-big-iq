@@ -1,5 +1,5 @@
-Module 4 - Add a user to a custom role
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Module 4: Add a user to a custom role
+======================================
 
 Add a user to a custom role to give them specific permissions to a resource group.
 

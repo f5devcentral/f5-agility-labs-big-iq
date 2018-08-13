@@ -1,5 +1,5 @@
 Module 1: Create multiple changes. Deploy single change
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=======================================================
 
 The user has the ability to select a specific change out of many made for deploy. We will try to add an additional node to the existing pool in this task.
 

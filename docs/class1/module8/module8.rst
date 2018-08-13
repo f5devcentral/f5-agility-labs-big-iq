@@ -1,4 +1,4 @@
-Class 8 - Application Templates & Deployment (Optional)
+Module 8: Application Templates & Deployment (Optional)
 ========================================================
 
 **BIG-IP Cloud Edition:**

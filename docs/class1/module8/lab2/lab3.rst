@@ -1,5 +1,5 @@
-Create Application
---------------------
+Lab 3: Create Application
+=========================
 
 Connect as \ **paula** to create a new application, and click
 on \ *Create*, select the template previously

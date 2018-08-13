@@ -1,5 +1,5 @@
-Module 5 – Test access privileges for the user with the custom role
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Module 5: Test access privileges for the user with the custom role
+===================================================================
 
 Test user nsadmin on the access privileges for the custom resource groups assigned.
 

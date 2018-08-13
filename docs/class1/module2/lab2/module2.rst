@@ -1,5 +1,5 @@
 Module 2 – Create and Import a self-signed certificates/key to BIG-IQ
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=====================================================================
 
 Now that you have tried how to move a BIG-IP client certificate to “Managed”, we can now try to create a BIG-IP self-signed certificate and key pair, then import and manage them on BIG-IQ.
 

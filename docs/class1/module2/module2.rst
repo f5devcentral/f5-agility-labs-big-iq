@@ -1,5 +1,5 @@
-Class 2 - SSL Certificate Management
-======================================
+Module 2: SSL Certificate Management
+====================================
 
 **Goal:**
 

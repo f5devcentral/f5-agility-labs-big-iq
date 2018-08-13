@@ -1,5 +1,5 @@
 Module 4: Managing permissions for GSLB Objects
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===============================================
 
 **View GSLB objects**
 

@@ -1,5 +1,5 @@
 Module 4: Deploy Staged Changes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===============================
 
 Now that we have staged a number of changes on the BIG-IQ, we will evaluate the staged changes, and then deploy them to the BIG-IPs.
 

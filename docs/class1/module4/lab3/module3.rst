@@ -1,5 +1,5 @@
-Module 3 - Add new custom role
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Module 3: Add new custom role
+==============================
 
 In addition to the built-in roles that ship with BIG-IQ, you can create a custom role with specific privileges to particular areas of BIG-IQ and BIG-IP devices.
 

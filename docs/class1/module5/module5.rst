@@ -1,4 +1,4 @@
-Class 5 - Partial Deployment & Partial Restore
+Module 5: Partial Deployment & Partial Restore
 ===============================================
 
 **Goal:**

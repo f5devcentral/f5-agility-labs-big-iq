@@ -1,5 +1,5 @@
-Create Custom Security Policies
---------------------------------
+Lab 1: Create Custom Security Policies
+======================================
 
 Connect as \ **larry**
 

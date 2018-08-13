@@ -1,6 +1,5 @@
-
-Checking DSC Group status
---------------------------
+Step 1: Checking DSC Group status
+=================================
 
 To start managing DSC devices you must add devices configured in DSC to the BIG-IP Device Inventory. Discover the devices into BIGIQ Inventory by assigning the clustered devices to a BIGIQ clustered group.
 

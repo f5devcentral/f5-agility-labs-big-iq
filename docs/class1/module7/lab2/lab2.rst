@@ -1,5 +1,5 @@
 Module 2: Managing DNS Profiles
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===============================
 
 A DNS profile allows you to configure various DNS attributes that a virtual server or DNS listener object applies to DNS traffic. For example, when you enable the DNS Express feature in the DNS profile, the BIG-IP system acts as an authoritative secondary DNS server, and performs actions such as zone transfers from multiple primary DNS servers or zone transfers from the local BIND server on the BIG-IP system.
 

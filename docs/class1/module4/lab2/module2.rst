@@ -1,5 +1,5 @@
-Module 2 Create a resource group and associate it with a role type
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Module 2: Create a resource group and associate it with a role type
+===================================================================
 
 Create a resource group with all of the BIG-IP objects you want to provide access to, and assign a role type to it.
 

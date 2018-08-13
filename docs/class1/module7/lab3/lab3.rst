@@ -1,5 +1,5 @@
 Module 3: Managing DNS Listeners
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=================================
 
 A \ *listener* is a specialized virtual server that passively checks for DNS packets on port 53 and the IP address you assign to the listener.
 

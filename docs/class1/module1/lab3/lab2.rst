@@ -1,5 +1,4 @@
-
-Step 2. Create a backup schedule
+Step 2: Create a backup schedule
 --------------------------------
 
 Now, we can create our backup schedule that references this dynamic group.
