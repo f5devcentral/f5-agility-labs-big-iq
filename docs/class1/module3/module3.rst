@@ -1,4 +1,4 @@
-Module 4: Role Management
+Module 3: Role Management
 =========================
 
 Goal:
@@ -85,16 +85,16 @@ associate this role type and resource group to a role.
 
 Tasks:
 
-4.1: Create a custom role type to give permissions to BIG-IP object
+3.1: Create a custom role type to give permissions to BIG-IP object
 types
 
-4.2: Create a resource group and associate it with a role type
+3.2: Create a resource group and associate it with a role type
 
-4.3: Add new custom role
+3.3: Add new custom role
 
-4.4: Add a user to a custom role
+3.4: Add a user to a custom role
 
-4.5: Test access privileges for the user with the custom role
+3.5: Test access privileges for the user with the custom role
 
 .. toctree::
    :maxdepth: 1
