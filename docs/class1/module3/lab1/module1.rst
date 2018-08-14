@@ -1,139 +1,70 @@
-Module 1: Add licensing base-key to BIG-IQ for consumption
-==========================================================
+Module 1: Create a custom role type to give permissions to BIG-IP object types
+===============================================================================
 
-**Step 1: Activate Purchased License Pool**
+Creating a custom role type is the first step to providing custom role-based access to users.
 
-Navigate to "LICENSE MANAGEMENT > Licenses" under the "Device" tab.
+|image2|
 
-|image6|
+Steps for Module 1:
+^^^^^^^^^^^^^^^^^^^
 
-Click "Add License"
+1. At the top of the screen, click System.
 
-|image7|
+2. On the left, click ROLE MANAGEMENT > Role Types.
 
-Fill in the form for your purchased license pool (VEP)
+3. Near the top of the screen, click the Add button.
 
-|image8|
+4. In the Name field, type a name to identify this new role type.
 
-License Name: **PurchasedPool\_1G\_Best**
+   | Name: **MyNetworkSecurityRole**
+   | Select Service: **Network Security (AFM)**
 
-Copy and Paste the VEP license key obtained from your lab instructor.
+5. Scroll through the Object Type list and select the check box next to
+   each Object Type you want to provide access to. For this lab, we will
+   check the box to the left of the Object Type header to select ALL
+   object types.
 
-Click "Activate" in the lower right
+6. Click on Add Selected to add the selected services to the Selected
+   Object Types area at the above.
 
-Click "Accept" in the lower right to accept the EULA.
+7. Select the check box next to Select All beneath the permissions you
+   want to grant for this role type.
 
+|image3|
 
-**Step 2: Activate Volume License Pool**
+1. Before saving the custom role type, we are going to customize the
+   Permissions for this new custom role type.
 
-Click on “Add License” button again for the Volume license pool.
+   **Uncheck** the checkbox next to Add, Edit and Delete on the
+   following rows:
 
-|image9|
+   Address Lists
 
-While the Volume Pool is activating, click on the pool name to see the activation of all of the offering types for the pool.
+   Rule Lists
 
-License Name: **VolumeLicensePool\_10G\_Best**
+|image4|
 
-Copy and Paste the VLS license key obtained from your lab instructor.
+|image5|
 
-|image10|
+   Now you have a custom role type that has some custom privileges for
+   some of the Network Security objects such as Rule Lists and Address
+   Lists.
 
-|image11|
+2. Click the Save & Close button at the bottom of the screen.
 
-.. NOTE::
-     This pool will not be active until all of the offerings complete activation.
-
-Click the arrow at the top of the pool properties screen to add the next pool.
-
-|image12|
-
-
-**Step 3: Activate Utility License Pool**
-
-3. Repeat steps 6-8 for the Utility license pool (MSP)
-
-License Name: **UtilityLicensePool**
-
-Copy and Paste the MSP license key obtained from your lab instructor.
-
-|image13|
-
-.. NOTE::
-	 Utility pools activate offerings, just like the Volume pools, so the same holds true that the pool will not be active until the offerings are activated.
+    Next, you need to create a resource group and associate it with this
+    newly created custom role type.
 
 
-**Step 4: Active A pool of single standalone BIG-IP VE registration keys**
-
-Now, we will create a new pool to hold our LAB VE keys. Click the **New RegKey Pool** button.
-   
-|image14|
-
-Fill out the Registration Key pool name:
-
-|image15|
-
-Click the "Add RegKey" to add your first LAB VE key:
-
-|image16|
-
-Copy and Paste the first LAB VE key.
-
-|image17|
-
-Click "Activate" in the lower right.
-
-Click "Accept" in the lower right to accept the EULA.
-
-|image18|
-
-Click the "Add RegKey" button again to repeat the above steps for your second LAB VE regkey.
-
-You should now have a screen that looks like this:
-
-|image19|
-
-Stay on this screen for the next Task to assign the license key to a BIG-IP device.
-
-
-.. |image6| image:: media/image6.png
-   :width: 2.24972in
-   :height: 0.96863in
-.. |image7| image:: media/image7.png
-   :width: 6.48958in
-   :height: 1.66667in
-.. |image8| image:: media/image8.png
-   :width: 5.03062in
-   :height: 2.71841in
-.. |image9| image:: media/image9.png
-   :width: 5.04104in
-   :height: 2.71841in
-.. |image10| image:: media/image10.png
-   :width: 6.50000in
-   :height: 1.82917in
-.. |image11| image:: media/image11.png
-   :width: 3.04129in
-   :height: 3.48915in
-.. |image12| image:: media/image12.png
-   :width: 4.89522in
-   :height: 0.98946in
-.. |image13| image:: media/image13.png
-   :width: 5.10353in
-   :height: 2.82256in
-.. |image14| image:: media/image14.png
-   :width: 3.19752in
-   :height: 0.96863in
-.. |image15| image:: media/image15.png
-   :width: 4.50833in
-   :height: 2.09583in
-.. |image16| image:: media/image16.png
-   :width: 6.50000in
-   :height: 2.73333in
-.. |image17| image:: media/image17.png
+.. |image2| image:: media/image2.png
+   :width: 6.25000in
+   :height: 0.70833in
+.. |image3| image:: media/image3.png
+   :width: 6.48750in
+   :height: 3.00000in
+.. |image4| image:: media/image4.png
    :width: 6.49583in
-   :height: 3.25417in
-.. |image18| image:: media/image18.png
+   :height: 2.77083in
+.. |image5| image:: media/image5.png
    :width: 6.49167in
-   :height: 4.17500in
-.. |image19| image:: media/image19.png
-   :width: 6.49167in
-   :height: 2.40417in
+   :height: 2.75000in

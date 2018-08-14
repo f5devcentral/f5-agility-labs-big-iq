@@ -1,109 +1,51 @@
-Module 4: Deploy Staged Changes
-===============================
+Module 4: Managing permissions for GSLB Objects
+===============================================
 
-Now that we have staged a number of changes on the BIG-IQ, we will evaluate the staged changes, and then deploy them to the BIG-IPs.
+**View GSLB objects**
 
-Navigate to **Deployment** on the top menu bar.
+When you use F5 BIG-IQ Centralized Management to manage your DNS sync
+group, you can view the GSLB objects that are defined on devices in the
+sync group.
 
-Navigate to **EVALUATE & DEPLOY > Local Traffic & Network**.
+1. At the top of the screen, click Configuration.
 
-|image33|
+2. On the left, click DNS > GSLB, and then select the object type that you want to view.
 
-Click the **Create** button under **Evaluations**.
+|image19|
 
-Fill out the fields to Create Evaluation:
+The screen displays a list of the selected object type that are defined on devices managed by this BIG-IQ system. For each object (except topology records or topology regions), icons describe the health status and availability.
 
-    | Name: **DeployChgSet1
-    | Source: **Current Changes**
-    | Source Scope: **All Changes**
-    | Unused Objects: **Removed Unused Objects**
-    | Target Devices: Select Group “All ADC Devices” and move all devices to Selected
+3. To view overview information about a particular object, select the check box for that object.
 
-|image34|
+An overview panel and a related items panel display for this object.
 
-Click the Create button in the lower right.
+|image20|
 
-|image35|
+4. To see a list of related items for a GSLB object:
 
+a. Select the check box for that object.
 
-After the evaluation completes, click the View link under Differences to review the changes that will be deployed.
+b. In the Related Items panel, click Show.
 
-|image36|
+|image21|
 
-Review the staged changes for each device. Change devices with the selector in the upper left.
+You can view the list of related items; and, for many of the items, you can click on a link to view properties for that item.
 
-|image37|
+5. To view the general properties for a GSLB object, click the name of that object.
 
-Click on each change to review the differences.
+The screen displays the properties for the selected object.
 
-|image38|
+|image22|
 
-After you have reviewed all of the changes, click the Cancel button in the lower right.
-
-|image39|
-
-Click on the name of the Evaluation to review the options available there.
-
-|image40|
-
-
-**Note** that you can review the changes to be deployed on a device by device basis and you can choose to exclude a device from the deployment at this point. At the bottom of the page, you can schedule the deployment for a later time, or you can Deploy Now.
-
-Click the **Deploy Now** button to push the changes to the BIG-IPs.
-
-|image41|
-
-Click the **Deploy** button
-
-|image42|
-
-
-At the bottom of the screen, you can review that your changes are being deployed
-
-|image43|
-
-
-Click on the name of the Deployment to review what was deployed
-
-|image44|
-
-Log in to BOS—vBIGIP01 using the TMUI link in UDF and confirm that your deployment was successful. 
-
-You should now see the **BIQAppVS** on the Network Map.
-
-.. |image33| image:: media/image32.png
-   :width: 2.27055in
-   :height: 1.28109in
-.. |image34| image:: media/image33.png
-   :width: 6.49167in
-   :height: 3.17500in
-.. |image35| image:: media/image34.png
-   :width: 1.82269in
-   :height: 0.55201in
-.. |image36| image:: media/image35.png
+.. |image19| image:: media/image20.png
+   :width: 6.49583in
+   :height: 2.91250in
+.. |image20| image:: media/image21.png
+   :width: 6.49583in
+   :height: 4.17083in
+.. |image21| image:: media/image22.png
    :width: 6.50000in
-   :height: 0.87847in
-.. |image37| image:: media/image36.png
-   :width: 3.09336in
-   :height: 1.36441in
-.. |image38| image:: media/image37.png
-   :width: 6.50000in
-   :height: 3.39792in
-.. |image39| image:: media/image38.png
-   :width: 0.95821in
-   :height: 0.51035in
-.. |image40| image:: media/image39.png
-   :width: 1.99975in
-   :height: 1.69770in
-.. |image41| image:: media/image40.png
-   :width: 7.36203in
-   :height: 2.07222in
-.. |image42| image:: media/image41.png
-   :width: 4.57234in
-   :height: 2.17681in
-.. |image43| image:: media/image42.png
-   :width: 6.50000in
-   :height: 1.15972in
-.. |image44| image:: media/image43.png
-   :width: 6.50000in
-   :height: 1.15625in
+   :height: 3.65625in
+.. |image22| image:: media/image23.png
+   :width: 6.49583in
+   :height: 6.27083in

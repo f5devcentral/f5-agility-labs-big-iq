@@ -1,86 +1,60 @@
-Module 2: Assign Pool Licensing to a device BIG-IP
-==================================================
+Module 2: Create a resource group and associate it with a role type
+===================================================================
 
-Now that we have all these different key types available in BIG-IQ, we will use BIG-IQ to push a license to a device.
+Create a resource group with all of the BIG-IP objects you want to provide access to, and assign a role type to it.
 
-We will start by granting one of our LAB VE keys.
+|image6|
 
-1.  Select the license that you want to assign to a device and click the "Assign" button. 
-    
-|image20|
+Steps for Module 2:
+^^^^^^^^^^^^^^^^^^^
 
-You can assign the licenses to managed devices or unmanaged devices from BIG-IQ.
+1. Click ROLE MANAGEMENT > Resource Groups on the left navigation area.
 
-For this lab, you should avoid giving licenses to BOS-vBIG-IP01 or BOS-vBIG-IP02. We are going to test Managed device licensing by using SEA-vBIG-IP01.
+2. Near the top of the screen, click the Add button.
 
-    | Select **Managed Device**
-    | Device: **SEA-vBIG-IP01.termmarc.com**
+3. In the Name field, type a name to identify this group of resources,
+   from the Role Type list, select the role type you want to provide
+   access to for this group of resources.
 
-|image21|
+    Name: **NsresGroup**
 
-Click the Assign button in the lower right.
+    | Description: **Network Security Resource Group**
+    | Role Type: **MyNetworkSecurityRole**
 
-Click the OK button to proceed with the assignment of the license.
+1. From the Select Service list, select the service(s) you want to
+   provide access to for this group of resources. From the Object
+   Type list, select the type of object you want to add to this group of
+   resources.
 
-|image22|
+   | Select Service: **Network Security (AFM)**
+   | Select Object Type: **Firewall Policies**
 
-You should now see that license as assigned out of the pool to Device Name: SEA-vBIGIP01.termmarc.com with the License Status as “Licensed”.
+2. For the Source setting, leave the default “Source: Selected
+   Instances” unchanged.
 
-|image23|
+   -  Selected Instances - Select this option to put only the source
+      objects you selected into this resource group. If you select this
+      option, the associated role will not have access to any new
+      objects of the same type added in the future unless you explicitly
+      add it to this resource group.
 
-You can also view all assignments by clicking on Assignments in the left hand menu
+   -  Any Instance - Select this option if you want the associated role
+      to have any instance of the specified object type, including
+      future instances (newly configured objects of this type).
 
-|image24|
+3. Select the check box next to the name of each object you want to add
+   to this group of resources and click the Add Selected button.
 
-|image25|
+|image7|
 
-2.  Now we can create a report that shows our license usage. Click the Report button below Assignments.
+4. Click the Save & Close button.
 
-|image26|
+Next, you can create a custom role and associate this role type and
+resource group to the new role.
 
-We will generate a Historical Report that shows the license assignments that we have done today.
-
-    | Select Type: Historical Report
-    | Licenses: All License Types
-    | **Move all license pools from Available to Selected**
-    | Usage period: Leave Starting Date and Ending Date as today’s date.
-
-|image27|
-
-Click Download in the lower right lower corner to download the reports
-
-If your browser raises a question about downloading multiple files, click Allow:
-
-|image28|
-
-Review the CSV files that are downloaded.
-
-You can also create an Active Report and view the current assignment of the LAB VE license key to SEA-vBIGIP01.
-
-.. |image20| image:: media/image20.png
-   :width: 3.66621in
-   :height: 1.44774in
-.. |image21| image:: media/image21.png
-   :width: 6.23750in
-   :height: 2.79583in
-.. |image22| image:: media/image22.png
-   :width: 6.50000in
-   :height: 1.60139in
-.. |image23| image:: media/image23.png
-   :width: 6.50000in
-   :height: 1.85417in
-.. |image24| image:: media/image24.png
-   :width: 2.31221in
-   :height: 1.02071in
-.. |image25| image:: media/image25.png
-   :width: 6.50000in
-   :height: 1.12500in
-.. |image26| image:: media/image26.png
-   :width: 1.77061in
-   :height: 0.95821in
-.. |image27| image:: media/image27.png
-   :width: 6.49583in
-   :height: 3.79583in
-.. |image28| image:: media/image28.png
-   :width: 3.62455in
-   :height: 1.19777in
+.. |image6| image:: media/image6.png
+   :width: 6.25000in
+   :height: 0.79167in
+.. |image7| image:: media/image7.png
+   :width: 6.48750in
+   :height: 2.96250in

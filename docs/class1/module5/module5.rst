@@ -1,42 +1,36 @@
-Module 5: Partial Deployment & Partial Restore
-===============================================
+Module 5: Local Traffic Management Virtual Servers
+===================================================
 
-**Goal:**
+Goal:
 
-In this lab, we will demonstrate how to partially deploy the changes made to the device specific objects to the managed BIG-IP devices.
+In this lab, we will demonstrate how to manage Virtual Servers on the managed BIG-IP devices.
 
-This figure illustrates the workflow you perform to manage the objects on BIG-IP devices. 
+BIG-IQ is able to create nodes, monitors, pools, profiles, and virtual servers, so a user can create and stage a new application directly on the BIG-IQ, then deploy the change to the Managed BIG-IP device.
 
-|image01|
+You will need to understand the basic workflow such as creating a new Virtual Server on a Managed BIG-IP device.
 
-Deploying changes applies the revisions that you have made on the BIG-IQ® Centralized Management system to the managed BIG-IP® devices.
+For example, the following figure illustrates the basic workflow you perform to manage the objects on BIG-IP® devices.
 
-The objects that you manage using BIG-IQ® depend on associations with other, supporting objects. These objects are called \ ***shared objects***.
+|image0|
 
-When the BIG-IQ evaluates a deployment to a managed device, it starts by deploying the device-specific objects. Then it examines the managed
-device to compile a list of the objects that are needed by other objects on that device. Then (based on the recent analysis) the BIG-IQ deletes
-any shared objects that exist on the managed device but are not used. So if there are objects on a managed device that are not being used, the
-next time you deploy changes to that device, the unused objects are deleted.
+Tasks:
 
-You have the option to choose whether you want to evaluate all of the changes, or specify which changes to evaluate. Select either \ **All Changes** or **Partial Changes** from the selected source.
+5.1: Stage a new application on BIG-IQ for deployment
 
-..NOTE::
-     When BIG-IQ® Centralized Management evaluates configuration changes, it first re-discovers the configuration from the managed device to ensure that there are no unexpected differences. If there are issues, the default behavior is to discard any changes made on the managed device, and then deploy the configuration changes.
+5.2: Create a new virtual server by cloning an existing virtual server
 
-- To accept the default, proceed with the evaluation. The settings from the managing BIG-IQ overwrite the settings on the managed BIG-IP® device.
-- To override the default, re-discover the device and re-import the service. The settings from the managed BIG-IP device overwrite any changes that have been made using the BIG-IQ.
+5.3: Create iRule and attach to multiple virtual servers
 
+5.4: Deploy Staged Changes
 
-**Tasks:**
-
-**5.1: Create multiple changes. Deploy single change**
-
-**5.2: Create and deploy multiple changes with selected roll-back**
+5.5: Decommission a virtual server
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   lab*/module*
+   lab*/lab*
 
-.. |image01| image:: media/image01.png
+.. |image0| image:: media/image1.png
+   :width: 6.25000in
+   :height: 0.60417in

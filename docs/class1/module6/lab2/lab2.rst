@@ -1,55 +1,47 @@
-Module 2: Create a new virtual server by cloning an existing virtual server
-============================================================================
+Module 2: Managing DNS Profiles
+===============================
 
-BIG-IQ allows you to clone an existing virtual server to create a new virtual server. This cloned virtual can be deployed to the same BIG-IP device/cluster or to a new BIG-IP device/cluster. Cloning can be used to migrate a virtual server or to make a virtual server that is similar to one that already exists.
+A DNS profile allows you to configure various DNS attributes that a virtual server or DNS listener object applies to DNS traffic. For example, when you enable the DNS Express feature in the DNS profile, the BIG-IP system acts as an authoritative secondary DNS server, and performs actions such as zone transfers from multiple primary DNS servers or zone transfers from the local BIND server on the BIG-IP system.
 
-In this scenario, we will clone a virtual server from our cluster and deploy it to our standalone device.
+You can view the DNS profiles you manage by navigating to "Configuration > DNS > Delivery > Profiles". From there, click "Create" to setup a new one, or click on an existing profile to edit it.
 
-Navigate to the **Configuration** tab on the top menu bar.
+**Create a DNS profile**
 
-Navigate to **LOCAL TRAFFIC > Virtual Servers**
+You create a profile to configure various DNS attributes that a virtual server or DNS listener object can apply to DNS traffic.
 
-|image19|
+At the top of the screen, click Configuration, then, on the left, click "DNS > Delivery > Profiles".
 
-Type forward in the filter box on the right-hand side of the screen and press return.
+The screen displays the list of profiles defined on this device.
 
-|image20|
+Click "Create".
 
-Click the check box to the left of the first virtual server entry.
+The New Profile screen opens.
 
-|image21|
+Type a Name for the DNS profile: **mydnsprofile**
 
-Click the **Clone** button under Virtual Servers at the top of the page.
+Select a Parent Profile from which this profile inherits settings: **/Common/dns**
 
-Edit the Virtual Server Properties:
+|image11|
 
-   | Name: **forward\_vs\_udf\_CLONED**
-   | Device: **SEA-vBIGIP01.termmarc.com**
-   | Destination Address: **1.0.0.0/8**
-   | Protocol: **All Protocols**
-   | VLANs and Tunnels: **Enabled on…**
-   | VLANs and Tunnels: Selected: **internal**
+Select the options you want to override from the parent DNS profile.
 
-|image22|
+These options perform the same function as they do on a BIG-IP device.
 
-Click the **Save & Close** button in the lower right.
+Under DNS Features, check the **Use BIND Server on BIG-IP**, and select **Disabled**.
 
-|image23|
+|image12|
 
-Click on the X in the “Filtered by” box to clear the filter and move to next task.
+When your edits are complete, click Save & Close.
 
-.. |image19| image:: media/image16.png
-   :width: 2.32263in
-   :height: 0.78115in
-.. |image20| image:: media/image20.png
-   :width: 3.36416in
-   :height: 0.74991in
-.. |image21| image:: media/image21.png
-   :width: 5.73887in
-   :height: 1.56230in
-.. |image22| image:: media/image22.png
-   :width: 6.50000in
-   :height: 2.80417in
-.. |image23| image:: media/image23.png
-   :width: 5.73887in
-   :height: 1.56230in
+The system creates the new profile you specified and adds it to the list of profiles.
+
+.. NOTE::
+	 When you edit a default profile, you cannot override the parent profile settings, because default profiles do not have a parent.
+
+
+.. |image11| image:: media/image12.png
+   :width: 5.76250in
+   :height: 4.75833in
+.. |image12| image:: media/image13.png
+   :width: 5.39583in
+   :height: 5.36250in

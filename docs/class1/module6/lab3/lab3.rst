@@ -1,121 +1,111 @@
-Module 3: Create iRule and attach to multiple virtual servers
-=============================================================
+Module 3: Managing DNS Listeners
+=================================
 
-BIG-IQ allows users to create iRules and use them on the virtual servers that are managed by BIG-IQ. The iRules can be attached to individual virtual servers or iRules can be attached to multiple virtual servers in the same operation.
+A \ *listener* is a specialized virtual server that passively checks for DNS packets on port 53 and the IP address you assign to the listener.
 
-In this scenario, we will apply an iRule to a number of our virtual servers that presents a maintenance page if none of the pool members supporting the virtual are online and available.
+When a DNS query is sent to the IP address of the listener, BIG-IP DNS either handles the request locally or forwards the request to the appropriate resource.
 
-You can create an iRule on the BIG-IQ directly.
+You can view the DNS listeners configured for the DNS sync groups you manage by navigating to "Configuration > DNS > Delivery > Listeners".
 
-To save time the **VS\_maintenance\_irule** has already been created on the BIG-IQ.
-
-1. Steps 1-5 show that you can create an iRule on the BIG-IQ directly.
-
-To save time the **VS\_maintenance\_irule** has already been created on the BIG-IQ.
-
-..NOTE::
-     Skip to step 6 to apply the already configured iRule, or you may create your own iRule for this lab.
+From there, click a listener to edit it, click Create to set up a new one.
 
 
-2. Navigate to the **Configuration** tab on the top menu bar.
 
-3. Select **LOCAL TRAFFIC > iRules**
+**Edit an Existing DNS listener**
 
-|image24|
+You can view and modify the properties for existing DNS listeners. Since you are working with an existing listener, you can modify only some settings.
 
-4. Click the Create button under iRules
+1. At the top of the screen, click Configuration, then, on the left, click "DNS > Delivery > Listeners".
 
-|image25|
+The screen displays the list of listeners defined on this device.
 
-5. Fill out the iRule Properties page
-   | Name: **VS\_maintenance\_irule**
-   | Partition: **Common**
-   | Body: as below:
+|image13|
 
-when RULE\_INIT {
-# sets the timer to return client to host URL
-set static::stime 10
-}
+2. Click the name of the listener you want to edit.
 
-when CLIENT\_ACCEPTED {
-set default\_pool [LB::server pool]
-}
+The screen displays the current settings for the selected listener.
 
-when HTTP\_REQUEST {
-# Check if the URI is /maintenance
-switch [HTTP::uri] {
+|image14|
 
-"/maintenance" {
+3. Make the changes to the settings you want to revise. Change VLAN Traffic from All VLANs to Enabled on /Common/External, and then, when your edits are complete, click Save & Close.
 
-# Send an HTTP 200 response with a Javascript meta-refresh pointing to the host using a refresh time
-HTTP::respond 200 content \\
-"<html><head><title>Maintenance page</title></head><body><metahttp-equiv='REFRESH' content=$static::stime;url=[HTTP::uri]></HEAD>\\
-<p><h2>Sorry! This site is down for maintenance.</h2></p></body></html>" "Content-Type" "text/html"
-return
-}
-}
+|image15|
 
-# If the default pool is down, redirect to the maintenance page
-if { [active\_members $default\_pool] < 1 } {
-HTTP::redirect "/maintenance"
-return
-}
-}
-
-|image26|
-
-6. | Navigate to **LOCAL TRAFFIC > Virtual Servers**
-
-|image27|
-
-Type ITwiki in the filter box on the right hand side of the screen and press return.
-
-|image28|
-
-| Click to select all the matching virtual servers
-
-|image29|
+The system updates the listener with the settings you specified.
 
 
-Click the **Attach iRules** button at the top of the screen
 
-|image30|
+**Create a DNS listener**
 
-Fill out the Attach iRules section
-   | iRules: Select the **VS\_maintenance\_irule** iRule
+Before you create a DNS listener, make sure you have a pool of DNS servers.
 
-|image31|
+You can configure a listener that alerts BIG-IP DNS to DNS queries
+destined for a pool of DNS servers. The best practice is to create four
+listeners: one with an IPv4 address that handles UDP traffic, and one
+with the same IPv4 address that handles TCP traffic; one with an IPv6
+address that handles UDP traffic, and one with the same IPv6 address
+that handles TCP traffic.
 
-Click **Save & Close** in the lower right.
+1. At the top of the screen, click Configuration, then, on the left, click "DNS > Delivery > Listeners".
 
-Clear the filter from the Virtual Servers
+The screen displays the list of listeners defined on this device.
 
-|image32|
+2. Click Create.
 
-.. |image24| image:: media/image24.png
-   :width: 2.34346in
-   :height: 1.44774in
-.. |image25| image:: media/image25.png
-   :width: 1.12486in
-   :height: 1.02071in
-.. |image26| image:: media/image26.png
+The New Listener screen opens.
+
+3. Type a Name for the DNS listener: **my-listener-udp**
+
+4. Select a BIG-IP Device on which the DNS listener will run: **SEA-vBIGIP01.termmarc.com**
+
+5. In the Listener area, type the IP Address on which the BIG-IP system listens for connections: **10.1.10.204**
+
+The BIG-IP system receives traffic sent to this IP address and processes it as needed.
+
+|image16|
+
+6. Scroll down to the Service area and select the DNS Profile that defines how the listener handles DNS traffic: **mydnsprofile.**
+
+|image17|
+
+The options are a list of system-supplied and user-defined DNS profiles.
+
+7. Specify any additional settings needed to suit the requirements for this listener.
+
+Name, Device, Address, and DNS Profile are the only required parameters when you create a listener. The remaining parameters on this screen are optional and perform the same function as they do when you configure a listener on a BIG-IP device.
+
+8. Click Save & Close.
+
+The system creates the new listener you specified and adds it to the list of listeners.
+
+9. Create another listener with the same IPv4 address and configuration, but **select TCP from the Protocol list**.
+
+| Name: **my-listener-tcp**
+| BIG-IP Device: **SEA-vBIGIP01.termmarc.com** 
+| IP Address: **10.1.10.204 **
+| DNS Profile: **mydnsprofile**
+
+When you finish that, the BIG-IP device for which you created these
+listeners will be able to receive DNS queries, handle wide IP requests,
+and forward all other DNS queries to members of the pool of DNS servers.
+
+|image18|
+
+.. |image13| image:: media/image14.png
+   :width: 6.49583in
+   :height: 3.07500in
+.. |image14| image:: media/image15.png
+   :width: 6.49167in
+   :height: 5.00000in
+.. |image15| image:: media/image16.png
    :width: 6.50000in
-   :height: 2.42917in
-.. |image27| image:: media/image16.png
-   :width: 2.32263in
-   :height: 0.78115in
-.. |image28| image:: media/image27.png
-   :width: 3.43707in
-   :height: 0.69783in
-.. |image29| image:: media/image28.png
+   :height: 3.65625in
+.. |image16| image:: media/image17.png
+   :width: 6.49167in
+   :height: 3.90000in
+.. |image17| image:: media/image18.png
+   :width: 4.97500in
+   :height: 3.16250in
+.. |image18| image:: media/image19.png
    :width: 6.50000in
-   :height: 3.04375in
-.. |image30| image:: media/image29.png
-   :width: 3.18125in
-   :height: 0.98529in
-.. |image31| image:: media/image30.png
-   :width: 6.50000in
-   :height: 3.36181in
-.. |image32| image:: media/image31.png
-   :width: 2.91630in
-   :height: 1.41649in
+   :height: 2.20833in

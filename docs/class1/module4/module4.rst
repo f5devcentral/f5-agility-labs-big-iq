@@ -1,100 +1,37 @@
-Module 4: Role Management
-=========================
+Module 4: Partial Deployment & Partial Restore
+===============================================
 
-Goal:
+**Goal:**
 
-The following labs will get you familiar with managing Role Based Access
-Control for the BIG-IP devices from BIG-IQ Centralized Management
-console. There are several built-in roles shipped with BIG-IQ, but there
-might be a reason you want to give a person one or set of permissions to
-interact only in a clearly defined way with specific resources.
+In this lab, we will demonstrate how to partially deploy the changes made to the device specific objects to the managed BIG-IP devices.
 
-**About role-based user access**
+This figure illustrates the workflow you perform to manage the objects on BIG-IP devices. 
 
-BIG-IQ provides you with the tools you need to provide granular access
-to users. You decide what BIG-IP objects a user interacts with, and how.
-You use these BIG-IQ components for applying role-based user access.
+|image01|
 
-|image1|
+Deploying changes applies the revisions that you have made on the BIG-IQ® Centralized Management system to the managed BIG-IP® devices.
 
-BIG-IQ 5.4 first introduced the ability to create Custom Role Types and
-Resource Groups. The custom role types allow the admin to create
-additional roles types. The admin can set exactly what actions are
-permitted on which object types. The resource group functionality allows
-the admin to dictate what objects can be acted on by a user or group.
-The custom role type and resource group can be combined to create a
-custom role.
+The objects that you manage using BIG-IQ® depend on associations with other, supporting objects. These objects are called \ ***shared objects***.
 
-Roles can be created with two different modes:
+When the BIG-IQ evaluates a deployment to a managed device, it starts by deploying the device-specific objects. Then it examines the managed
+device to compile a list of the objects that are needed by other objects on that device. Then (based on the recent analysis) the BIG-IQ deletes
+any shared objects that exist on the managed device but are not used. So if there are objects on a managed device that are not being used, the
+next time you deploy changes to that device, the unused objects are deleted.
 
-    Relaxed Mode - Users can view all objects related to the service(s)
-    they have access to, but can modify only those they have explicit
-    permission to. This is the default.
+You have the option to choose whether you want to evaluate all of the changes, or specify which changes to evaluate. Select either \ **All Changes** or **Partial Changes** from the selected source.
 
-    Strict Mode - User can view or modify only the objects they have
-    explicit permission to.
+..NOTE::
+     When BIG-IQ® Centralized Management evaluates configuration changes, it first re-discovers the configuration from the managed device to ensure that there are no unexpected differences. If there are issues, the default behavior is to discard any changes made on the managed device, and then deploy the configuration changes.
 
-BIG-IQ® Centralized Management makes it easy for you to give users
-specific permissions for access only to those BIG-IP® objects they need
-to do their job. Role-based access allows you to create a custom role
-with specific privileges to view or edit only those BIG-IP objects
-(resources) you explicitly assign to the role.
+- To accept the default, proceed with the evaluation. The settings from the managing BIG-IQ overwrite the settings on the managed BIG-IP® device.
+- To override the default, re-discover the device and re-import the service. The settings from the managed BIG-IP device overwrite any changes that have been made using the BIG-IQ.
 
-**Pre-requisites for providing custom role-based access to an
-application**
 
-To complete this use case, you must have administrator access to BIG-IQ
-and have:
+**Tasks:**
 
--  Configured BIG-IQ.
+**4.1: Create multiple changes. Deploy single change**
 
--  Discovered a BIG-IP device and imported the LTM service.
-
--  Configured the SharePoint application on that BIG-IP device.
-
--  Configured authentication for your users. In this use case scenario,
-   we use BIG-IQ local authentication.
-
-There are several built-in roles shipped with BIG-IQ, but there might be
-a reason you want to give a person one or set of permissions to interact
-only in a clearly defined way with specific resources. To do that, you
-need to add each of the following to BIG-IQ:
-
-1. **Custom role type** - Select one or more services and define a set
-   of permissions (read, add, edit, delete) for interacting with the
-   objects associated with selected services.
-
-2. **Custom resource group** - Select the specific type of resources you
-   want to provide a user access to—for example, BIG-IP virtual servers.
-
-3. **Custom role** - Associate this custom role with the custom role
-   type and resource group you created, to combine the permissions you
-   specified in the custom role type with the resources you defined for
-   the custom resource group.
-
-4. **Custom user** - Associate this user with the custom role you
-   created to provide that person access and permissions to the
-   resources you specified.
-
-The first step to providing your user access to an application is to
-create a **custom \ *role type*** and define a set of permissions to
-specify how that role type interacts with objects that are associated
-with a service. Then you can create a **resource group** that contains
-the specific virtual server hosting your application so that you can
-associate this role type and resource group to a role.
-
-Tasks:
-
-4.1: Create a custom role type to give permissions to BIG-IP object
-types
-
-4.2: Create a resource group and associate it with a role type
-
-4.3: Add new custom role
-
-4.4: Add a user to a custom role
-
-4.5: Test access privileges for the user with the custom role
+**4.2: Create and deploy multiple changes with selected roll-back**
 
 .. toctree::
    :maxdepth: 1
@@ -102,6 +39,4 @@ types
 
    lab*/module*
 
-.. |image1| image:: media/image1.png
-   :width: 6.25000in
-   :height: 2.45833in
+.. |image01| image:: media/image01.png

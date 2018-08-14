@@ -1,187 +1,103 @@
-Module 1: Stage a new application on BIG-IQ for deployment
-===========================================================
+Module 1: Check DNS Sync Group Health
+=====================================
 
-1.  We will build our application starting at the nodes and making our way to the virtual servers.
+Before you can monitor the sync group health, you must add a BIG-IP
+device configured in a DNS sync group to the BIG-IP Devices inventory
+list, and import the LTM and DNS services. For the purpose of this lab,
+the sync group on BIG-IP DNS devices are already properly configured.
 
-Navigate to the **Configuration** tab on the top menu bar.
+When you use F5 BIG-IQ Centralized Management to manage your DNS sync
+group, you can monitor the health status of the group. Sync group health
+relies on complete alignment of a variety of device configuration
+elements. Using BIG-IQ simplifies the process of determining the health
+of your DNS sync groups.
 
-Navigate to **LOCAL TRAFFIC** > **Nodes**
+At the top of the screen, click Devices.
+
+On the left, click BIG-IP CLUSTERS > DNS Sync Groups.
+
+The screen displays the list of DNS sync groups defined on this device. A health indicator icon and a message describe the status of each group.
+
+|image0|
+
+To view the general properties for a sync group, click the sync group name.
 
 |image1|
 
-Click the Create button to create a node
+The screen displays the properties for the selected group. This screen shows an overview of your DNS sync group health. Under Status, you can see the current state (for example, Required Services Down, or Health Check(s) Passed) for each device in the group.
+
+To view the health for an individual sync group member, on the left click HEALTH.
 
 |image2|
 
+The Health screen displays detailed information for each factor that contributes to the health of a DNS sync group. Following a definition of each factor, a Status row provides additional detail.
 
-Fill out the configuration properties for the node
-    | Name: **BIQAppNode1**
-    | Device: **BOS-vBIGIP01.termmarc.com**
-    | Address: **10.1.20.110**
+For each indicator, the most serious issues impacting that indicator are listed first. Finally, if the status for a health indicator is not Health Check(s) Passed, the Recommended Action setting describes what you can do to correct the issue.
+
+Now, we will introduce a problem in the DNS Sync Group to see how that appears in BIG-IQ.
+
+Log into the command line of BOS-vBIGIP01 and run the following command.
 
 |image3|
 
-Click the **Save & Close** button in the lower right
+Return to the BIG-IQ GUI and select the status check box and then click the Refresh Status button to force a refresh.
 
-Repeat above steps for the second node:
-    | Name: **BIQAppNode2**
-    | Device: **BOS-vBIGIP01.termmarc.com**
-    | Address: **10.1.20.121**
+|image4|
 
-Verify that the nodes are created by typing “BIQApp” in the filter box in the upper right and pressing return.
- 
- |image4|
-
-You should now see an entry for each of the MyApp nodes on BIG-IP01 and BIG-IP02. 
-
-\*\*\ ***When you create an object on a clustered device, BIG-IQ automatically replicates that configuration to the peer node in the staged configuration.***
+Review the Status for the sync group(s). (This may take a minute for it to show down)
 
 |image5|
 
-
-2. Now we will create a pool with these nodes as pool members.
-
-Navigate to **LOCAL TRAFFIC > Pools**
+Click on the DNS Sync Group name to get more information
 
 |image6|
 
-
-Click the Create button to start creating your pool
+Review the Properties of the DNS Sync Group 
 
 |image7|
 
-Fill out the Pool Properties
-    | Name: **BIQAppPool**
-    | Device: **BOS-vBIGIP01.termmarc.com**
-    | Health Monitors: **/Common/tcp**
-    | Load Balancing Method: **Round Robin**
-
+Click on the Health tab to get further information. Scroll down to find the problem. 
+   
 |image8|
 
-Click on the New Member button under Resources to add pool members
+Return to the shell for BIG-IP01 and restart gtmd. 
 
+|image9|
+
+12.	Return to the BIG-IQ DNS Sync Group page and click on Refresh Status button again, and verify that all indicators have returned to green.
+   
 |image10|
 
-Complete the Pool Member Properties for the first pool member
-    | Node Type: **Existing Node**
-    | Node: **BIQAppNode1**
-    | Port: **80**
-
-|image11|
-
-Click the Save & Close button in the lower right to close the Add New Member window.
-
-Repeat the above steps for the second pool member **BIQAppNode2 port 80**.
-
-At last, click the **Save** **& Close** button in the lower right to save your pool.
-
-
-3. Now we will create a custom profile for our Virtual Server.
-
-Navigate to **LOCAL TRAFFIC > Profiles**
- 
- |image12|
-
-Click the Create button to create our custom profile.
-
-|image13|
-
-Fill out the Profile Properties.
-
-    | Name: **Source\_Addr\_Timeout\_75**
-    | Type: **Persistence Source Address**
-    | Parent Profile: **Source\_addr**
-    | Timeout: **Specify 75 Seconds**
-
-|image14|
-
-Click **Save & Close** in the lower right.
-
-
-4. Now we will create our Virtual Server. 
-
-Navigate to **LOCAL TRAFFIC > Virtual Servers**.
-
-|image15|
-
-Click the Create button to create the Virtual Server.
-
-|image16|
-
-
-Fill out the Virtual Server Properties:
-
-    | Name: **BIQAppVS**
-    | Device: **BOS-vBIGIP01.termmarc.com**
-    | Destination Address: **10.1.10.120**
-    | Service Port **8088
-    | HTTP Profile: **/Common/http**
-
-|image17|
-
-Scroll down and fill out the "Resources" section:
-
-    | Default Pool: **BIQAppPool**
-    | Default Persistence Profile: **Source\_Addr\_Timeout\_75**
-    | Leave all other options at their default settings.
-
-|image18|
-
-Click **Save & Close** in the lower right.
-
-We now have staged our application and we will deploy it in a later workflow.
-
+.. |image0| image:: media/image1.png
+   :width: 6.50000in
+   :height: 2.57500in
 .. |image1| image:: media/image2.png
-   :width: 2.29138in
-   :height: 2.18723in
+   :width: 6.50000in
+   :height: 2.55833in
 .. |image2| image:: media/image3.png
-   :width: 1.91643in
-   :height: 1.02071in
+   :width: 6.50000in
+   :height: 3.65625in
 .. |image3| image:: media/image4.png
-   :width: 4.53068in
-   :height: 4.42653in
+   :width: 5.48890in
+   :height: 0.47911in
 .. |image4| image:: media/image5.png
-   :width: 3.44749in
-   :height: 1.04154in
+   :width: 3.08295in
+   :height: 1.12486in
 .. |image5| image:: media/image6.png
    :width: 6.50000in
-   :height: 2.30556in
+   :height: 1.05972in
 .. |image6| image:: media/image7.png
-   :width: 2.28096in
-   :height: 1.87477in
+   :width: 6.50000in
+   :height: 1.08333in
 .. |image7| image:: media/image8.png
-   :width: 1.98934in
-   :height: 1.06237in
+   :width: 6.50000in
+   :height: 2.48542in
 .. |image8| image:: media/image9.png
    :width: 6.50000in
-   :height: 4.62014in
+   :height: 2.02708in
 .. |image9| image:: media/image10.png
-   :width: 6.50000in
-   :height: 0.58611in
+   :width: 5.96800in
+   :height: 0.45828in
 .. |image10| image:: media/image11.png
-   :width: 1.36441in
-   :height: 0.76032in
-.. |image11| image:: media/image12.png
-   :width: 5.25636in
-   :height: 4.42407in
-.. |image12| image:: media/image13.png
-   :width: 2.29138in
-   :height: 1.23943in
-.. |image13| image:: media/image14.png
-   :width: 1.82269in
-   :height: 1.31234in
-.. |image14| image:: media/image15.png
-   :width: 5.68125in
-   :height: 4.58081in
-.. |image15| image:: media/image16.png
-   :width: 2.32263in
-   :height: 0.78115in
-.. |image16| image:: media/image17.png
-   :width: 2.72883in
-   :height: 1.01029in
-.. |image17| image:: media/image18.png
    :width: 6.50000in
-   :height: 4.10486in
-.. |image18| image:: media/image19.png
-   :width: 5.93676in
-   :height: 3.26001in
+   :height: 2.02153in

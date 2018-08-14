@@ -1,33 +1,57 @@
-Module 7: BIG-IQ DNS Sync Group Administration
-===============================================
+Module 7: Application Templates & Deployment (Optional)
+========================================================
 
-Goal:
+**BIG-IP Cloud Edition:**
 
-In this lab, we will demonstrate how to manage the major DNS components
-on the managed BIG-IP devices from BIG-IQ CM perspective. We will
-**not** demonstrate the management of DNS application configuration
-objects such as WideIP, Pool or Servers.
+BIG-IP Cloud Edition provides traffic management and security
+application services on a per-application basis using BIG-IP LTM and
+Advanced WAF, respectively, to isolate workloads and for better
+manageability.
 
-When you use F5® BIG-IQ® Centralized Management to manage your DNS sync
-groups, the task becomes quite straightforward. You can do a quick
-health check, diagnose health issues, and even set up an alert to notify
-you if a sync group health issue occurs. You can view the DNS listeners
-configured for the DNS sync groups you manage. You can view and modify
-the properties for existing DNS profiles. You can also manage
-permissions for DNS GSLB objects.
+In addition, you can auto-scale application services based on predefined
+thresholds. Application auto-scaling uses the **Service Scaling Group (SSG)** feature, which enables administrators to configure the BIG-IQ
+system to scale-out or scale-in BIG-IP virtual edition instances based
+on scaling rules, such as CPU and memory use or throughput.
+
+To further enhance manageability, BIG-IP Cloud Edition enables network
+and security operations teams to provide application teams with
+self-service deployment of application services in public and private
+clouds.
+
+BIG-IP Cloud Edition is a solution package comprised of the BIG-IQ
+system, BIG-IP Per-App Virtual Edition (VE), and other supporting
+components.
+
+A service template is a collection of objects that you define. When you
+create an application from the template, you can omit or include these
+objects. Once you specify the objects and settings you need, you save
+the application and it creates those objects on the device you targeted
+it to, or on the devices in the SSG you identified.
+
+.. NOTE::
+	 You can currently auto-scale per-app virtual edition instances on Amazon Web Services (AWS) and VMWare.
+
+**Goal:**
+
+In this lab, we will cover the creation of Application Template and
+deployment of Applications. For Auto-scaling of applications via SSG,
+please refer to addition documentation.
+
+To create an application using the BIG-IQ user interface you choose a
+service template that defines the objects in that application and then
+decide whether you want to deploy that application to a service scaling
+group (SSG) or to a managed device.
 
 Tasks:
 
-7.1: Check DNS Sync Group Health
+7.1: Create personas in BIG-IQ for Application Deployment
 
-7.2: Managing DNS Profiles
+7.2: Application Templates & Deployment
 
-7.3: Managing DNS Listeners
-
-7.4: Managing permissions for GSLB Objects
+7.3: Application Deployment via API
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   lab*/lab*
+   lab*/module*
