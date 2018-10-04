@@ -1,0 +1,77 @@
+---
+- name: Delete applications SJC Lab F5 Networks
+  hosts: all
+  connection: local
+
+  tasks:
+    - name: site20waf.example.com
+      bigiq_application_https_waf:
+        provider:
+          server: 10.192.75.185
+          user: admin
+          password: admin
+          validate_certs: no
+        name: "site20waf.example.com"
+        wait: no
+        state: absent
+      delegate_to: localhost
+
+    - name: site22http.example.com
+      bigiq_application_http:
+        provider:
+          server: 10.192.75.185
+          user: admin
+          password: admin
+          validate_certs: no
+        name: "site22http.example.com"
+        wait: no
+        state: absent
+      delegate_to: localhost
+
+    - name: site26https.example.com
+      bigiq_application_https_offload:
+        provider:
+          server: 10.192.75.185
+          user: admin
+          password: admin
+          validate_certs: no
+        name: "site14https.example.com"
+        wait: no
+        state: absent
+      delegate_to: localhost
+
+    - name: site28fasthttp.example.com
+      bigiq_application_fasthttp:
+        provider:
+          server: 10.192.75.185
+          user: admin
+          password: admin
+          validate_certs: no
+        name: "site26fasthttp.example.com"
+        wait: no
+        state: absent
+      delegate_to: localhost
+
+    - name: site30fastL4tcp.example.com
+      bigiq_application_fastl4_tcp:
+        provider:
+          server: 10.192.75.185
+          user: admin
+          password: admin
+          validate_certs: no
+        name: "site28fasL4.example.com"
+        wait: no
+        state: absent
+      delegate_to: localhost
+
+    - name: site32udp.example.com
+      bigiq_application_fastl4_udp:
+        provider:
+          server: 10.192.75.185
+          user: admin
+          password: admin
+          validate_certs: no
+        name: "site30udp.example.com"
+        wait: no
+        state: absent
+      delegate_to: localhost

@@ -5,10 +5,10 @@
 # ------------
 #
 # REQUIRED: Your class/lab name
-classname = "BIG-IQ 6.0 Centralized Management"
+classname = "F5 BIG-IQ & Cloud Edition Lab"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
-github_repo = "https://github.com/f5devcentral/f5-agility-labs-big-iq"
+github_repo = "https://github.com/f5devcentral/f5-big-iq-lab"
 
 # OPTIONAL: Google Analytics
 # googleanalytics_id = 'UA-85156643-4'
@@ -61,7 +61,7 @@ if 'github_repo' in locals() and len(github_repo) > 0:
     rst_prolog += """
 .. |repoinfo| replace:: The content contained here leverages a full DevOps CI/CD
               pipeline and is sourced from the GitHub repository at %s.
-              Bugs and Requests for enhancements can be made using by
+              Bugs and Requests for enhancements can be made by
               opening an Issue within the repository.
 """ % (github_repo)
 else:
@@ -84,7 +84,8 @@ print "on_snops = %s" % on_snops
 # ones.
 extensions = [
   'sphinxjp.themes.basicstrap',
-  'sphinx.ext.todo'
+  'sphinx.ext.todo',
+  'sphinx.ext.autosectionlabel'
 ]
 
 if 'googleanalytics_id' in locals() and len(googleanalytics_id) > 0:
@@ -123,8 +124,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = classname
-copyright = u'2017, F5 Networks, Inc.'
-author = u'F5 Networks, Inc.'
+copyright = u'2018, F5 Networks, Inc.'
+author = u'Kyle Oliver, Roman Jouhanet, Nicolas Menant@F5 Networks, Inc.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -166,6 +167,7 @@ html_theme_options = {
                         'site_name': 'Community Training Classes & Labs',
                         'next_prev_link': True
                      }
+html_last_updated_fmt = '%Y-%m-%d %I:%M:%S'
 
 def setup(app):
     app.add_stylesheet('css/f5_agility_theme.css')
@@ -255,6 +257,3 @@ texinfo_documents = [
      author, classname, classname,
      'Training'),
 ]
-
-
-
