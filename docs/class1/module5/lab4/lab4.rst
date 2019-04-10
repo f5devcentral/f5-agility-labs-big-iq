@@ -13,7 +13,7 @@ Click the **Create** button under **Evaluations**.
 
 Fill out the fields to Create Evaluation:
 
-    | Name: **DeployChgSet1
+    | Name: **DeployChgSet1**
     | Source: **Current Changes**
     | Source Scope: **All Changes**
     | Unused Objects: **Removed Unused Objects**

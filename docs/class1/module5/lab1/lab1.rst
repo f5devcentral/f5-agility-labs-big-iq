@@ -114,7 +114,7 @@ Fill out the Virtual Server Properties:
     | Name: **BIQAppVS**
     | Device: **BOS-vBIGIP01.termmarc.com**
     | Destination Address: **10.1.10.120**
-    | Service Port **8088
+    | Service Port **8088**
     | HTTP Profile: **/Common/http**
 
 |image17|

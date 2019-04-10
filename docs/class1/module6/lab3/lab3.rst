@@ -82,7 +82,7 @@ The system creates the new listener you specified and adds it to the list of lis
 
 | Name: **my-listener-tcp**
 | BIG-IP Device: **SEA-vBIGIP01.termmarc.com** 
-| IP Address: **10.1.10.204 **
+| IP Address: **10.1.10.204**
 | DNS Profile: **mydnsprofile**
 
 When you finish that, the BIG-IP device for which you created these
