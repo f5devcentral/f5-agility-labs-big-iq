@@ -2,7 +2,7 @@
 
    **Exercise 1.1 – Import AS3 templates**
 
-From the lab environment, launch a Console/RDP session to have access to
+From the UDF lab environment, launch a Console/RDP session to have access to
 the Ubuntu Desktop. To do this, in your lab deployment, click on
 the \ *Access* button of the \ *Ubuntu Lamp Server* system and
 select \ *Console* or *XRDP*.
