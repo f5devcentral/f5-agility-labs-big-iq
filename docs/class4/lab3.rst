@@ -7,21 +7,21 @@ Tower and BIG-IQ**
    Lamp Server* in the Lab Environment. Use admin/purple123 to
    authenticate.
 
-|image20|
+|image26|
 
 2. Navigate to the \ **Projects** page and click on the refresh button
    to get the latest version of the templates.
 
-|image21|
+|image27|
 
 3. Navigate to the \ **Templates** page and review New_AS3_App
 
-|image22|
+|image28|
 
 4. Make sure the \ **PLAYBOOK** lab/f5-ansible-bigiq-as3-demo
    7.0.0/tower/app_create.yml is selected.
 
-|image23|
+|image29|
 
 **Note**
 
@@ -32,12 +32,12 @@ check review the playbooks and Jinja2 templates.
 5. On the \ **Templates**/*New_AS3_App* template page, click on
    the \ *Launch button to start a job using this template*.
 
-|image24|
+|image30|
 
 6. **CREDENTIAL**: Select BIG-IQ Creds as \ **Credential Type**. Then
    select paula-iq.
 
-   |image25|
+   |image31|
 
 7. **SURVEY**: Enter below information regarding your application
    service definition
@@ -52,16 +52,16 @@ check review the playbooks and Jinja2 templates.
 | **NODES:**      | 10.1.20.120 and 10.1.20.121   |
 +-----------------+-------------------------------+
 
-|image26|
+|image32|
 
 8. **PREVIEW**: Review the summary of the template deployment, then
    click on \ **LAUNCH**
 
-   |image27|
+   |image33|
 
 9. Follow the JOB deployment of the Ansible playbook.
 
-   |image28|
+   |image34|
 
 **Note**
 
@@ -72,7 +72,7 @@ loop isn’t completed.
 10. When the job is completed, check the PLAY RECAP and make sure there
     are no failed.
 
-    |image29|
+    |image35|
 
 10. Logon on \ **BIG-IQ** as **paula** *(paula\paula)*, go to
     Application tab and check the application is displayed and analytics
@@ -80,11 +80,11 @@ loop isn’t completed.
 
 11. Select Unknown Applications Application
 
-|image30|
+|image36|
 
 12. Select MyAppDeployedWithAnsibleTower_M... Application Service.
 
-    |image31|
+    |image37|
 
 **! Warning**
 
@@ -98,20 +98,20 @@ define the BIG-IQ Application name.*
 
 13. Review the HTTP traffic analytics.
 
-    |image32|
+    |image38|
 
 **Exercise 3.2 – Application Deletion**
 
 1. Navigate to the \ **Templates** page and review Delete_AS3_App
 
-|image33|
+|image39|
 
 2. Make sure
    the \ **PLAYBOOK** lab/f5-ansible-bigiq-as3-demo-7.0.0/tower/app_delete.yml is
    selected. Click on the \ *Launch button to start a job using this
    template*.
 
-|image34|
+|image40|
 
 **Note**
 
@@ -124,7 +124,7 @@ check review the playbooks and Jinja2 templates.
 
    Click *NEXT.*
 
-   |image35|
+   |image41|
 
 4. **SURVEY**: Enter below information regarding your application
    service definition.
@@ -135,16 +135,16 @@ check review the playbooks and Jinja2 templates.
 | APP NAME: | MyAppDeployedWithAnsibleTower |
 +-----------+-------------------------------+
 
-|image36|
+|image42|
 
 5. **PREVIEW**: Review the summary of the template deployment, then
    click on \ **LAUNCH**
 
-   |image37|
+   |image43|
 
 6. Follow the JOB deployment of the Ansible playbook.
 
-   |image38|
+   |image44|
 
 **Note**
 
@@ -155,81 +155,81 @@ loop isn’t completed.
 7. When the job is completed, check the PLAY RECAP and make sure there
    are no failed.
 
-   |image39|
+   |image45|
 
 8. Logon on \ **BIG-IQ** as **paula**, go to Application tab and check
    the application is displayed and analytics are showing.
    Select Unknown Applications Application
 
-|image40|
+|image46|
 
 Notice that the application is now deleted.
 
-|image41|
+|image47|
 
-.. |image20| image:: images/image20.png
+.. |image26| image:: images/image27.png
    :width: 3.79545in
    :height: 2.69677in
-.. |image21| image:: images/image21.png
+.. |image27| image:: images/image28.png
    :width: 7.49167in
    :height: 3.6933in
-.. |image22| image:: images/image22.png
+.. |image28| image:: images/image29.png
    :width: 7.52216in
    :height: 3.70833in
-.. |image23| image:: images/image23.png
+.. |image29| image:: images/image30.png
    :width: 7.54167in
    :height: 3.71795in
-.. |image24| image:: images/image24.png
+.. |image30| image:: images/image31.png
    :width: 7.48835in
    :height: 3.69167in
-.. |image25| image:: images/image25.png
+.. |image31| image:: images/image32.png
    :width: 5.31061in
    :height: 4.02172in
-.. |image26| image:: images/image26.png
+.. |image32| image:: images/image33.png
    :width: 5.75833in
    :height: 4.58679in
-.. |image27| image:: images/image27.png
+.. |image33| image:: images/image34.png
    :width: 4.68333in
    :height: 3.48193in
-.. |image28| image:: images/image28.png
+.. |image34| image:: images/image35.png
    :width: 7.57287in
    :height: 3.73333in
-.. |image29| image:: images/image29.png
+.. |image35| image:: images/image36.png
    :width: 7.52216in
    :height: 3.70833in
-.. |image30| image:: images/image30.png
+.. |image36| image:: images/image37.png
    :width: 7.55in
    :height: 3.68215in
-.. |image31| image:: images/image31.png
+.. |image37| image:: images/image38.png
    :width: 6.69697in
    :height: 3.80723in
-.. |image32| image:: images/image32.png
+.. |image38| image:: images/image39.png
    :width: 7.56167in
    :height: 3.125in
-.. |image33| image:: images/image33.png
+.. |image39| image:: images/image40.png
    :width: 7.28788in
    :height: 3.59284in
-.. |image34| image:: images/image34.png
+.. |image40| image:: images/image41.png
    :width: 7.31818in
    :height: 3.60778in
-.. |image35| image:: images/image35.png
+.. |image41| image:: images/image42.png
    :width: 5.20833in
    :height: 3.92957in
-.. |image36| image:: images/image36.png
+.. |image42| image:: images/image43.png
    :width: 5.80303in
    :height: 2.12465in
-.. |image37| image:: images/image37.png
+.. |image43| image:: images/image44.png
    :width: 4.95455in
    :height: 3.67876in
-.. |image38| image:: images/image38.png
+.. |image44| image:: images/image45.png
    :width: 7.31818in
    :height: 3.60778in
-.. |image39| image:: images/image39.png
+.. |image45| image:: images/image46.png
    :width: 7.54167in
    :height: 3.71795in
-.. |image40| image:: images/image40.png
+.. |image46| image:: images/image47.png
    :width: 7.48333in
    :height: 3.47171in
-.. |image41| image:: images/image41.png
+.. |image47| image:: images/image48.png
    :width: 7.55in
    :height: 3.72206in
