@@ -252,8 +252,8 @@ created on the BIG-IP.
 
 |image12|
 
-15. You can test the application service by open a browser in the Ubuntu
-       Jumphost and type the Virtual Server IP address 10.1.10.120. You
+15. You can test the application service by opening a browser in the Ubuntu
+       Jumphost and typing the Virtual Server IP address 10.1.10.120. You
        should see the Hackazon website.
 
 16. Back on the BIG-IQ as \ **paula**,
@@ -289,7 +289,7 @@ modifications.
 
 3. Now back to the BIG-IQ and tenant1_https_app_service application and
    select \ **Application Service > Configuration.** Scroll down in the
-   AS3 declaration and find that the schema has added the second pool
+   AS3 declaration and find that the schema has added the third pool
    member.
 
 |image16|
