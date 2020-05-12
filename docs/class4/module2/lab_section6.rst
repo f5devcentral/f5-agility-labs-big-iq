@@ -25,8 +25,8 @@ Enter the password **Agility2020Orlando!** if prompted.
 
 You will be asked a series of questions. Use the following values below; for all other values, leave the default value and simply press **Enter**: 
 
-``[BIG-IP] Host []: 10.1.1.4``
-``[BIG-IP] Username []: admin``
+``[BIG-IP] Host []: 10.1.1.4\n
+[BIG-IP] Username []: admin``
 ``[BIG-IP] Password []: Agility2020Orlando!``
 ``Virtual Server URL []: https://10.1.10.11``
 
