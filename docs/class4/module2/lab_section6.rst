@@ -3,10 +3,16 @@ F5 WAF Tester Utility Installation
 
 Before we begin with the web application firewall (WAF)/Application Security Module portion of the lab, you will need to install the F5 WAF tester.  The F5 WAF tester is a very simple lightweight utility that you can use to test ASM policies against a range of known vulnerabilities.  
 
-First, minimize all windows and open a new Web Server session, just as you did to launch the Juice Shop app earlier. 
+Let's minimize all current windows so we can see the desktop. Click on the WebApp Server link on the desktop.
+
+.. image:: _media/image45b.png
+
+You should be automatically logged in the CLI as shown below.
+
+.. image:: _media/image51b.png
 
 Next, install the tool using the following command: 
-
+ 
 ``sudo pip install git+https://github.com/f5devcentral/f5-waf-tester.git`` 
 
 .. image:: _media/image67.png
@@ -14,6 +20,8 @@ Next, install the tool using the following command:
 Once installed, configure the WAF tester using the following command: 
 
 ``sudo f5-waf-tester --init``
+
+Enter the password **Agility2020Orlando!** if prompted.
 
 You will be asked a series of questions. Use the following values below; for all other values, leave the default value and simply press **Enter**: 
 
