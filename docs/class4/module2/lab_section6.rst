@@ -15,13 +15,13 @@ Next, install the tool using the following command:
  
 ``sudo pip install git+https://github.com/f5devcentral/f5-waf-tester.git`` 
 
+Enter the password **Agility2020Orlando!** if prompted.
+
 .. image:: _media/image67.png
 
 Once installed, configure the WAF tester using the following command: 
 
 ``sudo f5-waf-tester --init``
-
-Enter the password **Agility2020Orlando!** if prompted.
 
 You will be asked a series of questions. Use the following values below; for all other values, leave the default value and simply press **Enter**: 
 
@@ -43,5 +43,4 @@ As the failures in the output show, the Juice Shop application is quite vulnerab
 
 More verbose output is viewable in the "report.json" file located in the current directory.
 
-In the next section, we will apply a web application firewall (WAF) policy that to protect the application
-
+In the next section, we will apply a web application firewall (WAF) policy that to protect the application.
