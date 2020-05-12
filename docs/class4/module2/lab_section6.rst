@@ -39,9 +39,9 @@ With the tester configured, run the actual test with the following command:
 
 .. image:: _media/image68.png
 
-You’ll notice all of the tests fail. For more detailed output, you can view the "report.json" file located in the current directory.
+As the failures in the output show, the Juice Shop application is quite vulnerable. 
 
-As you can clearly see from the output of the tool, the Juice Shop application is quite vulnerable. 
+More verbose output is viewable in the "report.json" file located in the current directory.
 
 In the next section, we will apply a web application firewall (WAF) policy that to protect the application
 
