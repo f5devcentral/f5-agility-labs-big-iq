@@ -7,7 +7,7 @@ Simple HTTP App Deployment
 Let's return to Postman.
 
 .. image:: _media/image1b.png
-q
+
 Expand the second collection, *2 - Application Services (AS3)*, by clicking on the small grey
 arrow next to the name as you did for DO. This will show the list of all requests for deploying
 our app via AS3.
