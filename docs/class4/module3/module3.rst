@@ -35,6 +35,6 @@ Maximize Firefox and return to the BIG-IQ UI. Navigate to the *Applications* tab
 
 Peruse the various dashboard components to view statistics. 
 
-.. image:: _media/image1.tif
+.. image:: _media/image1.png
 
 This concludes our lab. A list of resources used in this lab are available in the Resources section at the end of this documentation.
