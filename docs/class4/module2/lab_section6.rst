@@ -1,80 +1,36 @@
-Web App with Firewall and WAF Policy Deployment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+F5 WAF Tester Utility Installation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Back in Postman, single-click on the **Deploy App with Firewall Policy** to open the request in a new tab.
+Before we begin with the web application firewall (WAF)/Application Security Module portion of the lab, you will need to install the F5 WAF tester.  The F5 WAF tester is a very simple lightweight utility that you can use to test ASM policies against a range of known vulnerabilities.  
 
-.. image:: _media/image49.png
+First, minimize all windows and open a new Web Server session, just as you did to launch the Juice Shop app earlier. 
 
-Click on the **Body** tab to view the payload. We're using the same payload as the last section but adding
-an ASM web application firewall policy.
+Next, install the tool using the following command: 
 
-.. image:: _media/image50.png
+``sudo pip install git+https://github.com/f5devcentral/f5-waf-tester.git`` 
 
-Click **Send** to submit the declaration. You should see a message that the declaration was submitted
-successfully. This does not mean that the configuration was deployed; it simply means no syntax
-errors were detected prior to processing the payload.
+.. image:: _media/image67.png
 
-.. image:: _media/image52.png
+Once installed, configure the WAF tester using the following command: 
 
-Click on the **View Deploy App with Firewall and WAF Policies Task Status** item in the requests list. This is a
-simple GET request that will monitor the status of the deployment task.
+``sudo f5-waf-tester --init``
 
-.. image:: _media/image53.png
+You will be asked a series of questions. Use the following values below; for all other values, leave the default value and simply press **Enter**: 
 
-Click **Send** to view the current request status. You will likely see that your request is in progress, as shown
-below.
+``[BIG-IP] Host []: 10.1.1.4``
+``[BIG-IP] Username []: admin``
+``[BIG-IP] Password []: Agility2020Orlando!``
+``Virtual Server URL []: https://10.1.10.11``
 
-.. image:: _media/image54.png
+With the tester configured, run the actual test with the following command: 
 
-Click **Send** every few seconds to refresh the task status. Eventually, you'll see a 200 success message indicating
-that your application has been deployed.
+``sudo f5-waf-tester``
 
-.. image:: _media/image55.png
+.. image:: _media/image68.png
 
-Back in BIG-IQ (Firefox, 2nd tab), click **Applications** on the top menu and select **Applications** on the left menu.
-This returns us to the Applications dashboard/list.
+You’ll notice all of the tests fail. For more detailed output, you can view the "report.json" file located in the current directory.
 
-.. image:: _media/image56.png
+As you can clearly see from the output of the tool, the Juice Shop application is quite vulnerable. 
 
-Click on **Unknown Applications** to pull up the list of apps in the group.
+In the next section, we will apply a web application firewall (WAF) policy that to protect the application
 
-.. image:: _media/image57.png
-
-Click on the **Juice_Shop_Juice_Shop_App** link to pull up the application's dashboard. Notice that our app is
-showing good health and we're now securing the app using the WAF policy. 
-
-.. image:: _media/image58.png
-
-Go back to the Juice Shop tab in Firefox and refresh the page to ensure the application is working properly.
-
-.. image:: _media/image59.png
-
-Return back to the BIG-IQ application dashboard in the second tab. You should see your session/connection in the
-dashboard.
-
-.. image:: _media/image61.png
-
-Click on the **Application Deployments** item in the left menu. You will see a list of all the deployments we've
-run in this lab.
-
-.. image:: _media/image62.png
-
-On the BIG-IP in the first Firefox tab, navigate back to **Local Traffic** -> **Virtual Servers**.
-
-.. image:: _media/image63.png
-
-Click on the **serviceMain** virtual server in the list to open the virtual server configuration page.
-
-.. image:: _media/image64.png
-
-Click on the **Security** tab at the top of the configuration page and select **Policies** from the list. Notice
-that our Network Firewall and Application Security Policy items are applied to the virtual server.
-
-.. image:: _media/image65.png
-
-Finally, navigate to **Security** -> **Application Security** -> **Policies List** to view the ASM policy in use
-by our application. 
-
-.. image:: _media/image66.png
-
-This concludes the AS3 portion of our lab!

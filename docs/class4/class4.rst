@@ -13,3 +13,4 @@ services with minimal effort.
 
    components
    module*/module*
+   resources
