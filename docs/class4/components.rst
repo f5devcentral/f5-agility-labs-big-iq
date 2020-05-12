@@ -26,11 +26,11 @@ Hosts
  * External: 10.1.10.10
  * External: 10.1.10.11
  * Internal: 10.1.20.10
-* BIG-IQ 7.0 Central Manager (CM)
+* BIG-IQ 7.1 Central Manager (CM)
  * Credentials: admin / Agility2020Orlando! \| root / Agility2020Orlando!
  * Management: 10.1.1.5
  * Internal: 10.1.20.11
-* BIG-IQ 7.0 Data Collection Device (DCD)
+* BIG-IQ 7.1 Data Collection Device (DCD)
  * Credentials: admin / Agility2020Orlando! \| root / Agility2020Orlando!
  * Management: 10.1.1.6
  * Internal: 10.1.20.12
