@@ -45,7 +45,7 @@ The output will resemble the screen shot below:
 
 .. image:: _media/image5.png
 
-For ASM transactions, within BIG-IQ navigate to the *Monitoring tab* and then select **Events** -> **Network Security** -> **Events**. 
+For AFM transactions, within BIG-IQ navigate to the *Monitoring tab* and then select **Events** -> **Network Security** -> **Events**. 
 
 The output will resemble the screen shot below: 
 
