@@ -37,4 +37,10 @@ Peruse the various dashboard components to view statistics.
 
 .. image:: _media/image1.png
 
-This concludes our lab. A list of resources used in this lab are available in the Resources section at the end of this documentation.
+The final AS3 declaration also enabled the ability to send logs to BIG-IQ. To view these transactions, within BIG-IQ navigate to the *Monitoring tab* and then select **Events** -> **Web Application Security** -> **Events**. 
+
+The output will resemble the screen shot below: 
+
+.. image:: _media/image5.png
+
+This concludes our lab. Continue forward to view a list of resources used in this lab, available in the Resources section of this document.
