@@ -17,7 +17,7 @@ as the password.
 
 .. image:: _media/image14.png
 
-You will be taken to the Applications tab inside BIG-IQ. This is the dashboard that shows deployed applications
+Once logged into the BIG-IQ, click the **Applications** menu tab. This is the dashboard that shows deployed applications
 and corresponding status/statistics. Since we haven't deployed any applications, this area has no data. 
 
 Click on the **Devices** tab at the top of the BIG-IQ window. Under **BIG-IP Devices**, which is the section
