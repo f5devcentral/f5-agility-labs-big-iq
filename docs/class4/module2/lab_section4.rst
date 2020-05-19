@@ -4,7 +4,7 @@ Deploying AS3 via BIG-IQ
 Simple HTTP App Deployment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Let's return to Postman.
+Let's return to Postman--where we left off with the last section of the lab.
 
 .. image:: _media/image1b.png
 
