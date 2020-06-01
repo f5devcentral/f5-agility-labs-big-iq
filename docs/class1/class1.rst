@@ -1,16 +1,26 @@
-BIG-IQ 6.0 Centralized Management Up And Running
-================================================
+F5 Agility 2020: ADC Automation with BIG-IQ
+===========================================
 
-**Description**: This session will focus on the fundamental concepts and functions of BIG-IQ Centralized Management, with focus on the exciting new features of the latest release of BIG-IQ CM, and cover come basic workflows for managing BIG-IP Device, Security and other most common deployment scenarios.
+Welcome
+-------
 
-**Prerequisites**: None, this is entry level for a person not familiar with BIG-IQ Centralized Management.
-
-Expected time to complete: **3.5 Hours**
+Welcome to the BIG-IQ ADC Automation lab.
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
    :glob:
 
-   intro
-   module*/module*
+   lab*
+
+**List of instances**:
+
+- BIG-IQ <> DCD 7.1.0
+- 1x BIG-IP 14.1 / 1 standalone (SEA)
+- 1x BIG-IP 15.1 / 1 standalone (SJC)
+- LAMP Server - Radius, xRDP, noVNC, Application Servers, Traffic Generator, AWX/Ansible Tower, Visual Studio Code.
+
+**Documentations**:
+
+- `BIG-IQ Knowledge Center`_
+
+.. _BIG-IQ Knowledge Center: https://support.f5.com/csp/knowledge-center/software/BIG-IQ?module=BIG-IQ%20Centralized%20Management&version=7.1.0

@@ -1,12 +1,16 @@
-F5 BIG-IQ - Infrastructure and Application owners reunite! Automation and visibility into your App
-==================================================================================================
+F5 Agility 2020: Security Automation with BIG-IQ
+================================================
 
-Welcome to the |classbold| lab - |year|
-
-|repoinfo|
+This lab covers the utilization of BIG-IQ 7.1 for centralized management and data statistics collection. 
+The F5 declarative APIs for Declarative On-boarding (DO) and Application Services 3.0 (AS3) will be utilized
+to show how a newly provisioned BIG-IP can be configured completely for application delivery and security 
+services with minimal effort.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :caption: Contents:
    :glob:
 
+   components
    module*/module*
+   resources
