@@ -1,4 +1,4 @@
-BIG-IQ 6.0 Centralized Management
+BIG-IQ Centralized Management
 =================================
 
 .. toctree::
