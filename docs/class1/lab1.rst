@@ -8,14 +8,14 @@ Exercise 1.1 – Import AS3 templates
 
 **View AS3 templates section**
 
-1. From within the LAMP server RDP/noVNC session, logon to BIG-IQ as **david** *(david\\david)*
+1. From within the LAMP server XRDP/noVNC session, logon to BIG-IQ as **david** *(david\\david)*
       by opening a browser and go to: ``https://10.1.1.4`` or directly via
-      the TMUI.
+      the TMUI. David represents the Enterprise NetOps persona with admin level priviledges to BIG-IQ.
 
 2. Go to Applications > Application Templates and review the top section
       which is titled **AS3 Templates**.
 
-A new BIG-IQ v7.0 deployment will NOT include AS3 templates out of the
+A new BIG-IQ v7.x deployment will NOT include AS3 templates out of the
 box. If you want to start using AS3 templates which are provided by F5,
 then those AS3 templates can be found through the following
 link: https://github.com/f5devcentral/f5-big-iq
@@ -25,19 +25,19 @@ link: https://github.com/f5devcentral/f5-big-iq
 **Import AS3 BIG-IQ templates**
 
 1. Select **Import Templates** at the right top corner. You will be
-   taken to the BIG-IQ AS3 Template Library on Github.
+   taken to the BIG-IQ AS3 Template Library on GitHub.
 
 ..
 
    |image4|
 
-2. Make yourself familiar with the Github page and understand which AS3
+2. Make yourself familiar with the GitHub page and understand which AS3
    templates are available.
 
 3. The AS3 templates are already imported in BIG-IQ and you don’t need
    to perform step 4.
 
-4. Use the provided instructions on the Github page to import the
+4. Use the provided instructions on the GitHub page to import the
    templates into BIG-IQ.
 
 .. note:: The F5 default AS3 BIG-IQ templates are already imported in the lab environment blueprint.
@@ -62,7 +62,8 @@ Paula.
 
 1. From within the LAMP server RDP/noVNC session, logon on **BIG-IQ** as **paula** *(paula\\paula)*
     by opening a browser and go to: ``https://10.1.1.4`` or directly via
-    the TMUI as shown above.
+    the TMUI as shown above. Paula represents an App owner. Note that the logout buttom is in the upper
+    right-hand corner of the UI.
 
 2. In the **Applications** page click on **Create** to create an
    Application Service
@@ -163,7 +164,7 @@ Paula.
 
 |image11|
 
-11. Click **Create**.
+11. Click **Create**. Note; the "Create" button is on the lower right corner.
 
 12. Check that the Application LAB 1.2 has been created.
 
@@ -182,9 +183,10 @@ Paula.
 14. Now, let’s look on the BIG-IP and verify the application is
     correctly deployed in partition tenant1.
 
-Logon to SEA-vBIGIP01.termmarc.com BIG-IP as **admin** *(admin\\purple123)* 
-from the lab environment. Select the partition tenant1 and look at the objects
-created on the BIG-IP.
+Logon to SEA-vBIGIP01.termmarc.com BIG-IP (IP address: 10.1.1.7) as **admin** *(admin\\purple123)* 
+from the lab environment. Select the partition tenant1 and look at the objects created on the BIG-IP.
+You may need to click on one of the menu items like Local Traff >> Virtual Servers before you can
+select the tenant partition from the dropdown menu.
 
 |image14|
 
@@ -193,8 +195,8 @@ created on the BIG-IP.
        should see the Hackazon website.
 
 16. Back on the BIG-IQ as **paula**,
-       select tenant1_https_app_service Application Service and look
-       for HTTP traffic analytics.
+       select the Lab 2.1 tenant1_https_app_service >> Application Service and look for HTTP traffic 
+       analytics.
 
 |image15|
 
