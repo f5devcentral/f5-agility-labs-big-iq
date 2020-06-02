@@ -39,13 +39,13 @@ Peruse the various dashboard components to view statistics.
 
 The final AS3 declaration also enabled the ability to send logs to BIG-IQ for both AFM firewall logging and ASM WAF logging. 
 
-For ASM transactions, within BIG-IQ navigate to the *Monitoring tab* and then select **Events** -> **Web Application Security** -> **Events**. 
+For ASM transactions, within BIG-IQ navigate to the *Monitoring tab* and then select **Events** -> **Web Application Security** -> **Event Logs** -> **Events**. 
 
 The output will resemble the screen shot below: 
 
 .. image:: _media/image5.png
 
-For AFM transactions, within BIG-IQ navigate to the *Monitoring tab* and then select **Events** -> **Network Security** -> **Events**. 
+For AFM transactions, within BIG-IQ navigate to the *Monitoring tab* and then select **Events** -> **Network Security** -> **Firewall**. 
 
 The output will resemble the screen shot below: 
 

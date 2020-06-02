@@ -1,5 +1,5 @@
-Declarative On-boarding (DO) using BIG-IQ
-=========================================
+Pre-Device Configuration Review (BIG-IQ)
+========================================
 
 BIG-IQ Configuration Review
 ---------------------------
@@ -12,7 +12,7 @@ Again, Firefox should automatically open four tabs. They are:
  - BIG-IQ Data Collection Device (DCD) 
  - Test App (will 404 until we start the service)
  
-Click on the second tab and log into the BIG-IQ using **admin** as the username and **Agility2020ORlando!** 
+Click on the second tab and log into the BIG-IQ using **admin** as the username and **Agility2020Orlando!** 
 as the password.
 
 .. image:: _media/image14.png

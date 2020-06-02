@@ -98,7 +98,7 @@ and Continue** to proceed.
 
 .. image:: _media/image45.png
 
-The OWASP Juice BShop app will launch. Feel free to click around and explore. This shows that our firewall policy
+The OWASP Juice Shop app will launch. Feel free to click around and explore. This shows that our firewall policy
 is correctly permitting our web traffic.
 
 .. image:: _media/image47.png
