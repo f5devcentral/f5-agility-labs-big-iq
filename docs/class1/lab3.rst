@@ -28,7 +28,7 @@ Exercise 3.1 – Application Creation
 
 |image51|
 
-3. Log out of *AWX (Ansible Tower)* as Admin and logon on as **paul** *(paul\\paul)* to create the new application
+3. Log out of *AWX (Ansible Tower)* as Admin by clicking on the *Power Button* in the upper right corner and logon on as **paul** *(paul\\paul)* to create the new application
 
 |image48|
 
