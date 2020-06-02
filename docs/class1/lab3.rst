@@ -28,7 +28,7 @@ Exercise 3.1 – Application Creation
 
 |image51|
 
-3. Log out of *AWX (Ansible Tower)* as Admin and logon on as **paul** *(paul\\paul)* to create the new application
+3. Log out of *AWX (Ansible Tower)* as Admin by clicking on the *Power Button* in the upper right corner and logon on as **paul** *(paul\\paul)* to create the new application
 
 |image48|
 
@@ -181,10 +181,10 @@ Notice that the application is now deleted.
 .. |image31| image:: images/lab3/image32b.png
    :width: 5.31061in
    :height: 4.02172in
-.. |image32| image:: images/lab3/image33a.png
+.. |image32| image:: images/lab3/image33b.png
    :width: 5.75833in
    :height: 4.58679in
-.. |image33| image:: images/lab3/image34.png
+.. |image33| image:: images/lab3/image34b.png
    :width: 4.68333in
    :height: 3.48193in
 .. |image34| image:: images/lab3/image35a.png
