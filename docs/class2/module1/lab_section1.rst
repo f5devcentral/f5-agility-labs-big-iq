@@ -1,5 +1,5 @@
-Declarative On-boarding (DO) using BIG-IQ
-=========================================
+Pre-Device Configuration Review (BIG-IP)
+========================================
 
 BIG-IP Configuration Review
 ---------------------------
