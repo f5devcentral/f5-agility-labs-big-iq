@@ -1,9 +1,6 @@
 F5 Agility 2020: ADC Automation with BIG-IQ
 ===========================================
 
-Welcome
--------
-
 Welcome to the BIG-IQ ADC Automation lab.
 
 .. toctree::
