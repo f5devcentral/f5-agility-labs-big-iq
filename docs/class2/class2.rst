@@ -1,5 +1,5 @@
-F5 Agility 2020: Security Automation with BIG-IQ
-================================================
+F5 Agility 2020: Security Automation with BIG-IQ 7.1
+====================================================
 
 This lab covers the utilization of BIG-IQ 7.1 for centralized management and data statistics collection. 
 The F5 declarative APIs for Declarative On-boarding (DO) and Application Services 3.0 (AS3) will be utilized

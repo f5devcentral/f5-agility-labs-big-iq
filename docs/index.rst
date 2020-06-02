@@ -4,12 +4,7 @@ BIG-IQ Centralized Management
 Welcome
 -------
 
-Welcome to the |classbold| - |year|
-
 |repoinfo|
-
-This document details the lab exercises and demonstrations that comprise
-the hands-on component of the BIG-IQ.
 
 .. toctree::
    :maxdepth: 1
@@ -20,6 +15,11 @@ the hands-on component of the BIG-IQ.
 
 ------------
 
-Other Labs: `F5 BIG-IQ Centralized Management Lab`_
+**Other Resources**: 
+
+- `F5 BIG-IQ Centralized Management Lab`_
+- `BIG-IQ Knowledge Center`_
 
 .. _F5 BIG-IQ Centralized Management Lab: ../../big-iq-cloud-edition/html/
+.. _BIG-IQ Knowledge Center: https://support.f5.com/csp/knowledge-center/software/BIG-IQ?module=BIG-IQ%20Centralized%20Management&version=7.1.0
+
