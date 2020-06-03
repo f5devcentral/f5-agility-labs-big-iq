@@ -76,6 +76,8 @@ Login on as **paul** (paul\\paul)* to create the new application. Then click on 
 | NODES:     | 10.1.20.120 and 10.1.20.121   |
 +------------+-------------------------------+
 
+
+
 |image32|
 
 9. **PREVIEW**: Review the summary of the template deployment. 
