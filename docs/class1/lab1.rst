@@ -185,7 +185,7 @@ Paula.
 
 Logon to SEA-vBIGIP01.termmarc.com BIG-IP (IP address: 10.1.1.7) as **admin** *(admin\\purple123)* 
 from the lab environment. Select the partition tenant1 and look at the objects created on the BIG-IP.
-You may need to click on one of the menu items like Local Traff >> Virtual Servers before you can
+You may need to click on one of the menu items like Local Traffic >> Virtual Servers before you can
 select the tenant partition from the dropdown menu.
 
 |image14|
@@ -195,7 +195,7 @@ select the tenant partition from the dropdown menu.
        should see the Hackazon website.
 
 16. Back on the BIG-IQ as **paula**,
-       select the Lab 2.1 tenant1_https_app_service >> Application Service and look for HTTP traffic 
+       select Lab 2.1 tenant1_https_app_service >> Application Service and look for HTTP traffic 
        analytics.
 
 |image15|
