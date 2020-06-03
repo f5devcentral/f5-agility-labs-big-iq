@@ -45,7 +45,8 @@ Exercise 2.2 – Deploy application via BIG-IQ using a customized AS3 template
 1. In this exercise Paula is going to create an application service that
    includes a Web Application Firewall (WAF) profile to secure the
    application. You should be familiar with the other configuration
-   components from the prior lab.
+   components from the prior lab. The WAF policy was previously created and installed on the 
+   BIG-IP by the Security Admin.
 
 2. Before **Paula** can use this AS3 template, David needs to update her
    role. Use the previous steps in lab **1.2** to add AS3 Template
@@ -117,7 +118,12 @@ Exercise 2.2 – Deploy application via BIG-IQ using a customized AS3 template
 
 Logon to SEA-vBIGIP01.termmarc.com BIG-IP from the lab environment.
 Select the partition tenant2 and look at the objects created on the
-BIG-IP.
+BIG-IP. 
+
+Navigate to the virtual server in the tenant2 partition and under
+Security and note that the WAF policy is attached to it.
+
+Navigate to the WAF policy under Security >> Policies and review the protections enabled.
 
 |image24|
 
