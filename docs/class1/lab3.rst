@@ -18,13 +18,13 @@ Exercise 3.1 – Application Creation
 
 2. Navigate to the **Projects** page and click on the refresh button
    for the BIG-IQ-LAB project to get the latest version of the templates. 
-   
-   *Note: There may be more than one job with this name.* *Choose the first in the list*
 
 |image27|
 
 3. Navigate to the **Jobs** page and click on the *BIG-IQ-LAB* job to 
    to verify it was successful.
+   
+   *Note: There may be more than one job with this name.* *Choose the first in the list*
    
 |image50|
 
