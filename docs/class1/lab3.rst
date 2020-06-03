@@ -46,24 +46,24 @@ You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-la
 
 |image48|
 
-Login on as **paul** (paul\\paul)* to create the new application. Then click on *Sign In*
+7. Login on as **paul** (paul\\paul)* to create the new application. Then click on *Sign In*
 
 |image49|
 
-7. Navigate to the **Templates** page and click on *job Template* beside **(Agility 2020) New_AS3_App** to review the template
+8. Navigate to the **Templates** page and click on *job Template* beside **(Agility 2020) New_AS3_App** to review the template
 
 |image28|
 
-6. Click on *Launch*
+9. Click on *Launch*
 
 |image30|
 
-8. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then
+10. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then
    select *paul-iq*. Click on *NEXT*
 
    |image31|
 
-9. **SURVEY**: Enter below information regarding your application
+11. **SURVEY**: Enter below information regarding your application
    service definition. Click on *NEXT*
    
 +------------+-------------------------------+
@@ -80,12 +80,12 @@ Login on as **paul** (paul\\paul)* to create the new application. Then click on 
 
    |image32|
 
-10. **PREVIEW**: Review the summary of the template deployment. 
+12. **PREVIEW**: Review the summary of the template deployment. 
    Click on *LAUNCH*
 
    |image33|
 
-11. Follow the Job deployment of the Ansible playbook.
+13. Follow the Job deployment of the Ansible playbook.
 
    |image34|
 
@@ -93,11 +93,11 @@ Login on as **paul** (paul\\paul)* to create the new application. Then click on 
    The *FAILED - RETRYING* messages are expected as the playbook runs into a LOOP to check 
    the AS3 task completion and will show failed until loop is completed.
 
-12. When the job is completed, check the **PLAY RECAP** and make sure that *failed=* status is **0**.
+14. When the job is completed, check the **PLAY RECAP** and make sure that *failed=* status is **0**.
 
     |image35|
 
-13. From within the LAMP server RDP/noVNC session, logon on **BIG-IQ** as **paul** *(paul\\paul)*
+15. From within the LAMP server RDP/noVNC session, logon on **BIG-IQ** as **paul** *(paul\\paul)*
     by opening a browser and go to: ``https://10.1.1.4`` or directly via
     the TMUI as shown below.
     Go to Application tab and check the application is displayed and analytics
@@ -105,11 +105,11 @@ Login on as **paul** (paul\\paul)* to create the new application. Then click on 
    
     |image52|
 
-13. Select *Unknown Applications* Application tile
+16. Select *Unknown Applications* Application tile
 
    |image36|
 
-14. Select *MyAppDeployedWithAnsibleTower_M...* Application Service. 
+17. Select *MyAppDeployedWithAnsibleTower_M...* Application Service. 
 
     |image37|
 
@@ -123,7 +123,7 @@ create it directly into Application in BIG-IQ using the *`Deploy
 API <https://clouddocs.f5.com/products/big-iq/mgmt-api/latest/ApiReferences/bigiq_public_api_ref/r_public_api_references.html>`__* to
 define the BIG-IQ Application name.*
 
-15. Review the HTTP traffic analytics.
+18. Review the HTTP traffic analytics.
 
     |image38|
 
@@ -166,8 +166,9 @@ The application owner has informed Paul that the application is no longer needed
 
    |image44|
 
-.. note:: The *FAILED - RETRYING* messages are expected as the playbook runs into a LOOP to check the AS3 task 
-          completion and will show failed until loop is completed.
+   |image55|
+   The *FAILED - RETRYING* messages are expected as the playbook runs into a LOOP to check the AS3 task 
+   completion and will show failed until loop is completed.
 
 7.  When the job is completed, check the **PLAY RECAP** and make sure that *failed=* status is **0**.
 
