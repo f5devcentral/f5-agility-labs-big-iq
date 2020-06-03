@@ -58,8 +58,7 @@ You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-la
 
 |image30|
 
-10. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then
-   select *paul-iq*. Click on *NEXT*
+10. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then select *paul-iq*. Click on *NEXT*
 
    |image31|
 
