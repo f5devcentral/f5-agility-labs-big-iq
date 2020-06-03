@@ -78,7 +78,7 @@ Login on as **paul** (paul\\paul)* to create the new application. Then click on 
 
 
 
-|image32|
+   |image32|
 
 9. **PREVIEW**: Review the summary of the template deployment. 
    Click on *LAUNCH*
@@ -89,8 +89,9 @@ Login on as **paul** (paul\\paul)* to create the new application. Then click on 
 
    |image34|
 
-.. note:: The *FAILED - RETRYING* messages are expected as the playbook runs into a LOOP to check 
-          the AS3 task completion and will show failed until loop is completed.
+   |image55|
+   The *FAILED - RETRYING* messages are expected as the playbook runs into a LOOP to check 
+   the AS3 task completion and will show failed until loop is completed.
 
 11. When the job is completed, check the **PLAY RECAP** and make sure that *failed=* status is **0**.
 
@@ -106,7 +107,7 @@ Login on as **paul** (paul\\paul)* to create the new application. Then click on 
 
 13. Select *Unknown Applications* Application tile
 
-|image36|
+   |image36|
 
 14. Select *MyAppDeployedWithAnsibleTower_M...* Application Service. 
 
@@ -134,12 +135,12 @@ The application owner has informed Paul that the application is no longer needed
 1. Return to *AWX (Ansible Tower)* and if needed log back in as **paul** *(paul\\paul)*  
    Navigate to the **Templates** page and click on *(Agility 2020) Delete_AS3_App*
 
-|image39|
+   |image39|
 
 2. Click on the *Launch* button to start a job using this
    template*. 
 
-|image40|
+   |image40|
 
 3. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then
    select *paul-iq*. Click on *NEXT*
@@ -154,7 +155,7 @@ The application owner has informed Paul that the application is no longer needed
 | APP NAME: | MyAppDeployedWithAnsibleTower |
 +-----------+-------------------------------+
 
-|image42|
+   |image42|
 
 5. **PREVIEW**: Review the summary of the template deployment. 
    Click on *LAUNCH*
