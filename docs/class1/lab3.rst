@@ -34,9 +34,9 @@ Exercise 3.1 – Application Creation
 
 4.	Make sure the PLAYBOOK lab/f5-ansible-bigiq-as3-demo 7.0.0/tower/app_create.yml is selected.
 
-|image55|
-
 |image54|
+
+|image55|
 You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-lab/tree/develop/lab/f5-ansible-bigiq-as3-demo and check review the playbooks and Jinja2 templates.
 
 
