@@ -30,11 +30,11 @@ Exercise 3.1 – Application Creation
 
 3. Navigate to the **Templates** page and click on *job Template* beside **(Agility 2020) New_AS3_App** to review the template
 
-|image52|
+|image53|
 
 4.	Make sure the PLAYBOOK lab/f5-ansible-bigiq-as3-demo 7.0.0/tower/app_create.yml is selected.
 
-|image53|
+|image55|
 
 |image54|
 You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-lab/tree/develop/lab/f5-ansible-bigiq-as3-demo and check review the playbooks and Jinja2 templates.
@@ -250,6 +250,12 @@ Notice that the application is now deleted.
 .. |image52| image:: images/lab3/image53.png
    :width: 7.55in
    :height: 3.72206in
+.. |image53| image:: images/lab3/image54.png
+   :width: 7.55in
+   :height: 3.72206in
 .. |image54| image:: images/lab3/image55.png
+   :width: 7.55in
+   :height: 3.72206in
+.. |image55| image:: images/lab3/image56.png
    :width: 7.55in
    :height: 2.125in
