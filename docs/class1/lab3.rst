@@ -63,8 +63,7 @@ You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-la
 
    |image31|
 
-11. **SURVEY**: Enter below information regarding your application
-   service definition. Click on *NEXT*
+11. **SURVEY**: Enter below information regarding your application service definition. Click on *NEXT*
    
 +------------+-------------------------------+
 | APP NAME:  | MyAppDeployedWithAnsibleTower |
