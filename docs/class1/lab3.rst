@@ -171,14 +171,13 @@ The application owner has informed Paul that the application is no longer needed
 
    |image45|
 
-8. Logon on **BIG-IQ** as **paul** *(paul\\paul)*, go to
-    main Application page 
+8. Logon on **BIG-IQ** as **paul** *(paul\\paul)*, go to main Application page 
     
 9. Select *Unknown Applications* Application tile
 
    |image46|
 
-Notice that the application is now deleted.
+10. Notice that the application is now deleted.
 
    |image47|
 
