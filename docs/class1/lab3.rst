@@ -36,7 +36,7 @@ Exercise 3.1 – Application Creation
 
 |image53|
 
-**Note**
+|image54|
 You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-lab/tree/develop/lab/f5-ansible-bigiq-as3-demo and check review the playbooks and Jinja2 templates.
 
 
