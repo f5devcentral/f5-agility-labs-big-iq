@@ -120,7 +120,7 @@ create it directly into Application in BIG-IQ using the *`Deploy
 API <https://clouddocs.f5.com/products/big-iq/mgmt-api/latest/ApiReferences/bigiq_public_api_ref/r_public_api_references.html>`__* to
 define the BIG-IQ Application name.*
 
-18. Review the HTTP traffic analytics.
+18. Review the HTTP traffic analytics page.
 
     |image38|
 
