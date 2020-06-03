@@ -253,4 +253,4 @@ Notice that the application is now deleted.
    :height: 3.72206in
 .. |image54| image:: images/lab3/image55.png
    :width: 7.55in
-   :height: 3.72206in
+   :height: 2.125in
