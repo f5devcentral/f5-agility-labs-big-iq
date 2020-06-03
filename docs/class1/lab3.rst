@@ -32,7 +32,7 @@ Exercise 3.1 – Application Creation
 
 |image53|
 
-4.	Make sure the PLAYBOOK lab/f5-ansible-bigiq-as3-demo 7.0.0/tower/app_create.yml is selected.
+4.	Make sure the PLAYBOOK lab/f5-ansible-bigiq-as3-demo tower/app_create.yml is selected.
 
 |image54|
 
