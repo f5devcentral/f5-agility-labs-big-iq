@@ -63,6 +63,16 @@ Login on as **paul** (paul\\paul)* to create the new application. Then click on 
 
 8. **SURVEY**: Enter below information regarding your application
    service definition. Click on *NEXT*
+   
++------------+-------------------------------+
+| APP NAME:  | MyAppDeployedWithAnsibleTower |
++------------+-------------------------------+
+| APP TYPE:  | http_app or waf_app           |
++------------+-------------------------------+
+| SERVICE IP:| 10.1.10.125                   |
++------------+-------------------------------+
+| NODES:     | 10.1.20.120 and 10.1.20.121   |
++------------+-------------------------------+
 
 |image32|
 
