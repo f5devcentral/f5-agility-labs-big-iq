@@ -37,7 +37,7 @@ Exercise 3.1 – Application Creation
 |image54|
 
 |image55|
-You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-lab/tree/develop/lab/f5-ansible-bigiq-as3-demo and check review the playbooks and Jinja2 templates.
+You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-lab/tree/develop/lab/f5-ansible-bigiq-as3-demo to review the playbooks and Jinja2 templates.
 
 
 4. Log out of *AWX (Ansible Tower)* as Admin by clicking on the *Power Button* in the upper right corner 
