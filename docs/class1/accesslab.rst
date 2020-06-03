@@ -10,7 +10,7 @@ To do this, in your lab deployment, click on the *ACCESS* button of the *Ubunt
 If the RDP session does not render correctly or the resolution poor, you
 can try to use the *noVNC* option or complete the labs by going directly to the BIG-IP and BIG-IQ CM TMUI.
 
-|image0|
+|image1|
 
 For XRDP, there are no credentials, when the RDP session launches showing *Session: Xorg*, simply click *OK*.
 For NoVNC, the password is ``purple123``.
@@ -22,9 +22,8 @@ and select TMUI. The credentials to access the BIG-IQ TMUI are ``david/david`` a
 
 .. note:: You can also click on *DETAILS* on each component to see the credentials
 
-.. |image0| image:: images/image1.png
-   :align: center
+.. |image1| image:: images/image1.png
    :scale: 60%
-.. |image1| image:: images/image2.png
-   :align: center
+
+.. |image2| image:: images/image2.png
    :scale: 60%
