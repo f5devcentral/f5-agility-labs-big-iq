@@ -62,7 +62,7 @@ Paula.
 
 1. From within the LAMP server RDP/noVNC session, logon on **BIG-IQ** as **paula** *(paula\\paula)*
     by opening a browser and go to: ``https://10.1.1.4`` or directly via
-    the TMUI as shown above. Paula represents an App owner. Note that the logout buttom is in the upper
+    the TMUI as shown above. Paula represents an App owner. Note that the logout button is in the upper
     right-hand corner of the UI.
 
 2. In the **Applications** page click on **Create** to create an
@@ -184,9 +184,9 @@ Paula.
     correctly deployed in partition tenant1.
 
 Logon to SEA-vBIGIP01.termmarc.com BIG-IP (IP address: 10.1.1.7) as **admin** *(admin\\purple123)* 
-from the lab environment. Select the partition tenant1 and look at the objects created on the BIG-IP.
+from the lab environment. Select the tenant1 partition and look at the objects created on the BIG-IP.
 You may need to click on one of the menu items like Local Traffic >> Virtual Servers before you can
-select the tenant partition from the dropdown menu.
+select the tenant1 partition from the dropdown menu.
 
 |image14|
 
@@ -195,7 +195,7 @@ select the tenant partition from the dropdown menu.
        should see the Hackazon website.
 
 16. Back on the BIG-IQ as **paula**,
-       select Lab 2.1 tenant1_https_app_service >> Application Service and look for HTTP traffic 
+       Select the Lab 2.1 tenant1_https_app_service >> Application Service and look for HTTP traffic 
        analytics.
 
 |image15|
