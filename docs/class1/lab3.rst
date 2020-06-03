@@ -30,11 +30,11 @@ Exercise 3.1 – Application Creation
 
 |image51|
 
-3. Navigate to the **Templates** page and click on *job Template* beside **(Agility 2020) New_AS3_App** to review the template
+4. Navigate to the **Templates** page and click on *job Template* beside **(Agility 2020) New_AS3_App** to review the template
 
 |image53|
 
-4.	Make sure the PLAYBOOK **lab/f5-ansible-bigiq-as3-demo/tower/app_create.yml** is selected.
+5.	Make sure the PLAYBOOK **lab/f5-ansible-bigiq-as3-demo/tower/app_create.yml** is selected.
 
 |image54|
 
@@ -42,7 +42,7 @@ Exercise 3.1 – Application Creation
 You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-lab/tree/develop/lab/f5-ansible-bigiq-as3-demo to review the playbooks and Jinja2 templates.
 
 
-4. Log out of *AWX (Ansible Tower)* as Admin by clicking on the *Power Button* in the upper right corner 
+6. Log out of *AWX (Ansible Tower)* as Admin by clicking on the *Power Button* in the upper right corner 
 
 |image48|
 
@@ -50,7 +50,7 @@ Login on as **paul** (paul\\paul)* to create the new application. Then click on 
 
 |image49|
 
-5. Navigate to the **Templates** page and click on *job Template* beside **(Agility 2020) New_AS3_App** to review the template
+7. Navigate to the **Templates** page and click on *job Template* beside **(Agility 2020) New_AS3_App** to review the template
 
 |image28|
 
@@ -58,12 +58,12 @@ Login on as **paul** (paul\\paul)* to create the new application. Then click on 
 
 |image30|
 
-7. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then
+8. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then
    select *paul-iq*. Click on *NEXT*
 
    |image31|
 
-8. **SURVEY**: Enter below information regarding your application
+9. **SURVEY**: Enter below information regarding your application
    service definition. Click on *NEXT*
    
 +------------+-------------------------------+
@@ -80,12 +80,12 @@ Login on as **paul** (paul\\paul)* to create the new application. Then click on 
 
    |image32|
 
-9. **PREVIEW**: Review the summary of the template deployment. 
+10. **PREVIEW**: Review the summary of the template deployment. 
    Click on *LAUNCH*
 
    |image33|
 
-10. Follow the Job deployment of the Ansible playbook.
+11. Follow the Job deployment of the Ansible playbook.
 
    |image34|
 
@@ -93,11 +93,11 @@ Login on as **paul** (paul\\paul)* to create the new application. Then click on 
    The *FAILED - RETRYING* messages are expected as the playbook runs into a LOOP to check 
    the AS3 task completion and will show failed until loop is completed.
 
-11. When the job is completed, check the **PLAY RECAP** and make sure that *failed=* status is **0**.
+12. When the job is completed, check the **PLAY RECAP** and make sure that *failed=* status is **0**.
 
     |image35|
 
-12. From within the LAMP server RDP/noVNC session, logon on **BIG-IQ** as **paul** *(paul\\paul)*
+13. From within the LAMP server RDP/noVNC session, logon on **BIG-IQ** as **paul** *(paul\\paul)*
     by opening a browser and go to: ``https://10.1.1.4`` or directly via
     the TMUI as shown below.
     Go to Application tab and check the application is displayed and analytics
