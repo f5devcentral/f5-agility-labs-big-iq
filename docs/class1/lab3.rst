@@ -40,11 +40,11 @@ Exercise 3.1 – Application Creation
 You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-lab/tree/develop/lab/f5-ansible-bigiq-as3-demo and check review the playbooks and Jinja2 templates.
 
 
-4. Log out of *AWX (Ansible Tower)* as Admin by clicking on the *Power Button* in the upper right corner and logon on as **paul** *        (paul\\paul)* to create the new application
+4. Log out of *AWX (Ansible Tower)* as Admin by clicking on the *Power Button* in the upper right corner 
 
 |image48|
 
-Click on *Sign In*
+Login on as **paul** (paul\\paul)* to create the new application. Then click on *Sign In*
 
 |image49|
 
