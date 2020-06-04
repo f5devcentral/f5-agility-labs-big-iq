@@ -4,9 +4,9 @@ Post-DO Configuration Review (BIG-IQ)
 BIG-IQ Configuration/Stats
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Since everything looks to be complete from the API perspective, let's **minimize Postman** and focus back on Firefox.
+Since everything looks to be complete from the API perspective, let's **maximize Firefox** and click on the second tab to return to the BIG-IQ UI.
 
-On the second tab, the BIG-IQ will now show the BIG-IP device under **Devices** -> **BIG-IP Devices**.
+BIG-IQ will now show the BIG-IP device under **Devices** -> **BIG-IP Devices**.
 
 .. image:: _media/image24.png
 
@@ -24,6 +24,11 @@ Click on **Statistics Collection** section of the device menu. We've enabled sta
 
 :**NOTE**: A BIG-IQ instance can be used for Centralized Management (CM) or Data Collection (DCD) but never both. A typical BIG-IQ deployment will have multiple CMs and DCDs for HA/scale. Sizing is outside of the scope of this lab and dependent on the size of a BIG-IP deployment; please refer to your F5 account team for BIG-IQ sizing questions.
 
+.. image:: _media/image28a.png
+
 Clicking on the **Health** and **Properties** sections to view more information about the imported BIG-IP.
+
+.. image:: _media/image28b.png
+.. image:: _media/image28c.png
 
 In the next section, we'll review the BIG-IP's configuration.

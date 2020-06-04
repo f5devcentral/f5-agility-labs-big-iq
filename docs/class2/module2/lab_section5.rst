@@ -65,7 +65,7 @@ Next, navigate to **Security** -> **Network Firewall**. The statistics will appe
 
 .. image:: _media/image36.png
 
-Change the **Context** drop-down box to **Virtual Server...* and select the **serviceMain** virtual server in the 
+Change the **Context** drop-down box to **Virtual Server...** and select the **serviceMain** virtual server in the 
 drop-down that appears to the right. You'll then see how the hierarchical firewall policies are being enforced for
 our virtual server.
 
@@ -93,7 +93,7 @@ Navigate to **Shared Objects** -> **Port Lists** to view the port-list.
 .. image:: _media/image42.png
 
 In a new tab in Firefox, enter **https://10.1.10.11** in the URL bar. You'll be presented with a certificate error.
-Click the **Advanced...* button. Scroll down to view the entire dialog box that appears and click **Accept the Risk
+Click the **Advanced...** button. Scroll down to view the entire dialog box that appears and click **Accept the Risk
 and Continue** to proceed. 
 
 .. image:: _media/image45.png

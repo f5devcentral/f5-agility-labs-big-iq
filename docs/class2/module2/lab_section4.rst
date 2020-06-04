@@ -50,7 +50,7 @@ App Task Status** item in the collection list.
 .. image:: _media/image8b.png
 
 This simple GET request will pull the current status. Click **Send**. You may see that the task
-is still in progress, as shown below.
+is still in progress, as shown below. If so, click **Send** every few seconds to refresh the current status.
 
 .. image:: _media/image9b.png
 

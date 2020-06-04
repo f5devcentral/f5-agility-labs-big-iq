@@ -3,9 +3,17 @@ Application Performance and Security -  Status and Statistics
 
 In this section of the lab, we will run the F5 WAF Tester tool to generate attack traffic and view statistics in the BIG-IQ UI.
 
-Back on the Web App Server session, modify the configuration of the WAF tester to specify the newly installed policy. 
+Minimize Firefox and Postman. Return to the Web App Server session where we left off with the WAF Tester tool.
 
-To accomplish this, simply rerun the ``sudo f5-waf-tester –-init`` command with the following modified values: 
+.. image:: _media/image1a.png
+
+Modify the configuration of the WAF tester to specify the newly installed policy. 
+
+To accomplish this, simply rerun the initilization command:
+
+``sudo f5-waf-tester –-init`` 
+
+Use the new values below; press Enter to accept defaults for all other values.
 
 ``[BIG-IP] Host []: 10.1.1.4`` 
 
@@ -17,7 +25,7 @@ To accomplish this, simply rerun the ``sudo f5-waf-tester –-init`` command wit
 
 ``Virtual Server URL []: https://10.1.10.11``
 
-.. image:: _media/image2.png
+.. image:: _media/image1b.png
 
 Once reconfigured, re-run the WAF tester with the command:
 
@@ -31,7 +39,9 @@ Note that the Support ID is also being included in the detailed test results. Th
 
 .. image:: _media/image4.png
 
-Maximize Firefox and return to the BIG-IQ UI. Navigate to the *Applications* tab. Click on the application listed and select **Juice_Shop_Juice_Shop_App**. This will give a quick view of the now protected application.
+Maximize Firefox and return to the BIG-IQ UI. 
+
+Click on the *Applications** tab at the top, and then **Applications**. Click on the application listed and select **Juice_Shop_Juice_Shop_App**. This will give a quick view of the now protected application.
 
 Peruse the various dashboard components to view statistics. 
 

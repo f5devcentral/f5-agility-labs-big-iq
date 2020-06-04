@@ -35,10 +35,9 @@ as the password.
 
 .. image:: _media/image5.png
  
-The first screen you will see is the license screen. Verify that the license isn't expired. If the license is
-expired, please notify an F5er.
+You will be presented with the BIG-IP TMUI as shown below.
 
-.. image:: _media/image6.png
+.. image:: _media/image6a.png
 
 Navigate to **System** -> **Resource Provisioning** in the left navigation bar. Notice that LTM and iRulesLX
 are provisioned. We'll need the Advanced Firewall Manager (AFM) and the Application Security Manager (ASM)
@@ -47,7 +46,7 @@ declaration.
  
  .. image:: _media/image7.png
 
-Navigate to **System** -> **Configuration** -> **Device** -> NTP. Notice that there are no NTP servers 
+Navigate to **System** -> **Configuration** -> **Device** -> **NTP**. Notice that there are no NTP servers 
 configured.
  
 Let's verify the blank configuration sections for the networking configuration. Navigate to **Network** ->
@@ -63,11 +62,10 @@ they are not configured for traffic flow.
 .. image:: _media/image10.png
 .. image:: _media/image11.png
 
-AFM and ASM security modules would be configured in a **Security** section, but since those modules are not
-provisioned, the menus are not accessible at this time.
+NOTE: The Advanced Firewall Manager (AFM) and Application Security Manager (ASM) security modules would be configured in a **Security** section, but since those modules are not provisioned, the menus are not accessible at this time.
 
-Feel free to navigate through **Local Traffic** -> **Virtual Servers**. The **Pools** and **Nodes** sections
-will also be empty. 
+Feel free to navigate through **Local Traffic** -> **Virtual Servers**. The **Pools** and **Nodes** sections will also be empty. 
 
-Other than a license being installed for lab purposes and the hostname/IP address information configured via
-DHCP, this VE has no network or application configuration. Let's change that! 
+Other than a license being installed for lab purposes and the hostname/IP address information configured via DHCP, this VE has no network or application configuration. 
+
+Continue to the next section of the lab.
