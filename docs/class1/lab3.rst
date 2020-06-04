@@ -17,60 +17,84 @@ Exercise 3.1 – Application Creation
 |image26|
 
 2. Navigate to the **Projects** page and click on the refresh button
-   for the BIG-IQ-LAB project to get the latest version of the templates.
+   for the BIG-IQ-LAB project to get the latest version of the templates. 
 
 |image27|
 
-2. Navigate to the **Jobs** page and click on the *BIG-IQ-LAB* job to 
+3. Navigate to the **Jobs** page and click on the *BIG-IQ-LAB* job to 
    to verify it was successful.
+   
+   *Note: There may be more than one job with this name.* *Choose the first in the list*
    
 |image50|
 
 |image51|
 
-3. Log out of *AWX (Ansible Tower)* as Admin by clicking on the *Power Button* in the upper right corner and logon on as **paul** *(paul\\paul)* to create the new application
+4. Navigate to the **Templates** page and click on *job Template* beside **(Agility 2020) New_AS3_App** to review the template
+
+|image53|
+
+5.	Make sure the PLAYBOOK **lab/f5-ansible-bigiq-as3-demo/tower/app_create.yml** is selected.
+
+|image54|
+
+|image55|
+You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-lab/tree/develop/lab/f5-ansible-bigiq-as3-demo to review the playbooks and Jinja2 templates.
+
+
+6. Log out of *AWX (Ansible Tower)* as Admin by clicking on the *Power Button* in the upper right corner 
 
 |image48|
 
-Click on *Sign In*
+7. Login on as **paul** (paul\\paul)* to create the new application. Then click on *Sign In*
 
 |image49|
 
-4. Navigate to the **Templates** page and click on *job Template* beside **(Agility 2020) New_AS3_App** to review the template
+8. Navigate to the **Templates** page and click on *job Template* beside **(Agility 2020) New_AS3_App** to review the template
 
 |image28|
 
-5. Click on *Launch*
+9. Click on *Launch*
 
 |image30|
 
-6. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then
-   select *paul-iq*. Click on *NEXT*
+10. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then select *paul-iq*. Click on *NEXT*
 
    |image31|
 
-7. **SURVEY**: Enter below information regarding your application
-   service definition. Click on *NEXT*
+11. **SURVEY**: Enter below information regarding your application service definition. Click on *NEXT*
+   
++------------+-------------------------------+
+| APP NAME:  | MyAppDeployedWithAnsibleTower |
++------------+-------------------------------+
+| APP TYPE:  | http_app or waf_app           |
++------------+-------------------------------+
+| SERVICE IP:| 10.1.10.125                   |
++------------+-------------------------------+
+| NODES:     | 10.1.20.120 and 10.1.20.121   |
++------------+-------------------------------+
 
-|image32|
 
-8. **PREVIEW**: Review the summary of the template deployment. 
-   Click on *LAUNCH*
+
+   |image32|
+
+12. **PREVIEW**: Review the summary of the template deployment. Click on *LAUNCH*
 
    |image33|
 
-9. Follow the Job deployment of the Ansible playbook.
+13. Follow the Job deployment of the Ansible playbook.
 
    |image34|
 
-.. note:: The *FAILED - RETRYING* messages are expected as the playbook runs into a LOOP to check 
-          the AS3 task completion and will show failed until loop is completed.
+   |image55|
+   The *FAILED - RETRYING* messages are expected as the playbook runs into a LOOP to check 
+   the AS3 task completion and will show failed until loop is completed.
 
-10. When the job is completed, check the **PLAY RECAP** and make sure that *failed=* status is **0**.
+14. When the job is completed, check the **PLAY RECAP** and make sure that *failed=* status is **0**.
 
     |image35|
 
-11. From within the LAMP server RDP/noVNC session, logon on **BIG-IQ** as **paul** *(paul\\paul)*
+15. From within the LAMP server RDP/noVNC session, logon on **BIG-IQ** as **paul** *(paul\\paul)*
     by opening a browser and go to: ``https://10.1.1.4`` or directly via
     the TMUI as shown below.
     Go to Application tab and check the application is displayed and analytics
@@ -78,11 +102,11 @@ Click on *Sign In*
    
     |image52|
 
-12. Select *Unknown Applications* Application tile
+16. Select *Unknown Applications* Application tile
 
-|image36|
+   |image36|
 
-13. Select *MyAppDeployedWithAnsibleTower_M...* Application Service. 
+17. Select *MyAppDeployedWithAnsibleTower_M...* Application Service. 
 
     |image37|
 
@@ -96,7 +120,7 @@ create it directly into Application in BIG-IQ using the *`Deploy
 API <https://clouddocs.f5.com/products/big-iq/mgmt-api/latest/ApiReferences/bigiq_public_api_ref/r_public_api_references.html>`__* to
 define the BIG-IQ Application name.*
 
-14. Review the HTTP traffic analytics.
+18. Review the HTTP traffic analytics page.
 
     |image38|
 
@@ -108,12 +132,12 @@ The application owner has informed Paul that the application is no longer needed
 1. Return to *AWX (Ansible Tower)* and if needed log back in as **paul** *(paul\\paul)*  
    Navigate to the **Templates** page and click on *(Agility 2020) Delete_AS3_App*
 
-|image39|
+   |image39|
 
 2. Click on the *Launch* button to start a job using this
    template*. 
 
-|image40|
+   |image40|
 
 3. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then
    select *paul-iq*. Click on *NEXT*
@@ -128,7 +152,7 @@ The application owner has informed Paul that the application is no longer needed
 | APP NAME: | MyAppDeployedWithAnsibleTower |
 +-----------+-------------------------------+
 
-|image42|
+   |image42|
 
 5. **PREVIEW**: Review the summary of the template deployment. 
    Click on *LAUNCH*
@@ -139,21 +163,21 @@ The application owner has informed Paul that the application is no longer needed
 
    |image44|
 
-.. note:: The *FAILED - RETRYING* messages are expected as the playbook runs into a LOOP to check the AS3 task 
-          completion and will show failed until loop is completed.
+   |image55|
+   The *FAILED - RETRYING* messages are expected as the playbook runs into a LOOP to check the AS3 task 
+   completion and will show failed until loop is completed.
 
 7.  When the job is completed, check the **PLAY RECAP** and make sure that *failed=* status is **0**.
 
    |image45|
 
-8. Logon on **BIG-IQ** as **paul** *(paul\\paul)*, go to
-    main Application page 
+8. Logon on **BIG-IQ** as **paul** *(paul\\paul)*, go to main Application page 
     
 9. Select *Unknown Applications* Application tile
 
    |image46|
 
-Notice that the application is now deleted.
+10. Notice that the application is now deleted.
 
    |image47|
 
@@ -163,7 +187,7 @@ Notice that the application is now deleted.
 .. |image27| image:: images/lab3/image28.png
    :width: 7.49167in
    :height: 3.6933in
-.. |image48| image:: images/lab3/image49a.png
+.. |image48| image:: images/lab3/image49b.png
    :width: 3.79545in
    :height: 2.69677in
 .. |image49| image:: images/lab3/image50a.png
@@ -238,3 +262,12 @@ Notice that the application is now deleted.
 .. |image52| image:: images/lab3/image53.png
    :width: 7.55in
    :height: 3.72206in
+.. |image53| image:: images/lab3/image54.png
+   :width: 7.55in
+   :height: 3.72206in
+.. |image54| image:: images/lab3/image55a.png
+   :width: 7.55in
+   :height: 3.72206in
+.. |image55| image:: images/lab3/image56.png
+   :width: 7.55in
+   :height: 2.125in
