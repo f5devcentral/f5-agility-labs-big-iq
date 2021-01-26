@@ -9,7 +9,7 @@ management instance.
 
 .. image:: _media/image11.png
 
-Log into the BIG-IQ using the **admin** / **Agility2020Orlando!** credentials.
+Log into the BIG-IQ using the **admin** / **f5agility!** credentials.
 
 .. image:: _media/image12.png
 
