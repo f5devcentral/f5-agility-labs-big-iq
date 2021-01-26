@@ -15,7 +15,7 @@ Next, install the tool using the following command:
  
 ``sudo pip install git+https://github.com/f5devcentral/f5-waf-tester.git`` 
 
-Enter the password **Agility2020Orlando!** if prompted.
+Enter the password **f5agility!** if prompted.
 
 .. image:: _media/image67.png
 
@@ -29,7 +29,7 @@ You will be asked a series of questions. Use the following values below; for all
 
 ``[BIG-IP] Username []: admin``
 
-``[BIG-IP] Password []: Agility2020Orlando!``
+``[BIG-IP] Password []: f5agility!``
 
 ``Virtual Server URL []: https://10.1.10.11``
 
