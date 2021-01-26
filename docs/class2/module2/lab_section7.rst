@@ -81,4 +81,7 @@ by our application.
 
 .. image:: _media/image66.png
 
+Re-run the WAF tester tool to see the WAF preventing the test attacks. You can view statistics about the attacks 
+in BIG-IQ under the application service's dashbaord.
+
 This concludes the AS3 portion of our lab. 
