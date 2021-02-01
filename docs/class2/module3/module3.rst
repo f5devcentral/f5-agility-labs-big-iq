@@ -5,7 +5,7 @@ In this section of the lab, we will run the F5 WAF Tester tool to generate attac
 
 Minimize Firefox and Postman. Return to the Web App Server session where we left off with the WAF Tester tool.
 
-.. image:: _media/image69c.png
+.. image:: _media/image1a.png
 
 Modify the configuration of the WAF tester to specify the newly installed policy. 
 
