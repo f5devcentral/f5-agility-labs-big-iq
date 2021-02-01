@@ -41,7 +41,13 @@ With the tester configured, run the actual test with the following command:
 
 ``sudo f5-waf-tester``
 
+You will see multiple tests running as shown below:
+
 .. image:: _media/image68.png
+
+Once finished, you will see JSON output. Notice the last lines that show the failure count and zero successes.
+
+.. image:: _media/image68c.png
 
 As the failures in the output show, the Juice Shop application is quite vulnerable. 
 
