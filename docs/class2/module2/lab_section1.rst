@@ -14,7 +14,7 @@ Return to Firefox and click on the first tab to return to the BIG-IP web UI.
 
 .. image:: _media/image1.png
 
-Log in using **admin** / **Agility2020Orlando!** credentials.
+Log back into the TMUI if not already.
 
 .. image:: _media/image2.png
 
