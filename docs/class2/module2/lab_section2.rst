@@ -7,11 +7,7 @@ in regards to applications, which is mostly non-existent.
 Kindly find your way to the second tab in Firefox, which is the web UI for the BIG-IQ centralized
 management instance.
 
-.. image:: _media/image11.png
-
-Log into the BIG-IQ using the **admin** / **Agility2020Orlando!** credentials.
-
-.. image:: _media/image12.png
+Log into the BIG-IQ using the **admin** / **f5agility!** credentials if not already logged in.
 
 You'll likely return to the *Devices* tab on the BIG-IQ. Let's click on the **Applications**
 tab.

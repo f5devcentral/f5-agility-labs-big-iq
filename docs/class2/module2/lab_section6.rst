@@ -15,7 +15,7 @@ Next, install the tool using the following command:
  
 ``sudo pip install git+https://github.com/f5devcentral/f5-waf-tester.git`` 
 
-Enter the password **Agility2020Orlando!** if prompted.
+Enter the password **f5agility!** if prompted.
 
 .. image:: _media/image67.png
 
@@ -29,15 +29,25 @@ You will be asked a series of questions. Use the following values below; for all
 
 ``[BIG-IP] Username []: admin``
 
-``[BIG-IP] Password []: Agility2020Orlando!``
+``[BIG-IP] Password []: f5agility!``
 
 ``Virtual Server URL []: https://10.1.10.11``
+
+Your screen should appear as below:
+
+.. image:: _media/image67c.png
 
 With the tester configured, run the actual test with the following command: 
 
 ``sudo f5-waf-tester``
 
+You will see multiple tests running as shown below:
+
 .. image:: _media/image68.png
+
+Once finished, you will see JSON output. Notice the last lines that show the failure count and zero successes.
+
+.. image:: _media/image68c.png
 
 As the failures in the output show, the Juice Shop application is quite vulnerable. 
 

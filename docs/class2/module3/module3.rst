@@ -19,7 +19,7 @@ Use the new values below; press Enter to accept defaults for all other values.
 
 ``[BIG-IP] Username []: admin``
 
-``[BIG-IP] Password []: Agility2020Orlando!``
+``[BIG-IP] Password []: f5agility!``
 
 ``ASM Policy Name []: Juice_Shop_WAF_Policy``
 

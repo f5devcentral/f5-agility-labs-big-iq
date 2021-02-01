@@ -30,7 +30,7 @@ Firefox should automatically open four tabs. They are:
  - BIG-IQ Data Collection Device (DCD) 
  - Test App (will 404 until we start the service)
  
-Click on the first tab and log into the BIG-IP using **admin** as the username and **Agility2020Orlando!** 
+Click on the first tab and log into the BIG-IP using **admin** as the username and **f5agility!** 
 as the password.
 
 .. image:: _media/image5.png

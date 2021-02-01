@@ -81,4 +81,4 @@ by our application.
 
 .. image:: _media/image66.png
 
-This concludes the AS3 portion of our lab. 
+This concludes the AS3 portion of our lab. In the next section, we'll run our WAF testing tool again and view reports/statistics surrounding the application service.
