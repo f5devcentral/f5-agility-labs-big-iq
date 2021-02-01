@@ -18,8 +18,8 @@ Click on the device name itself to enter the device properties page.
 
 Clicking on the **Health** and **Properties** sections to view more information about the imported BIG-IP.
 
-.. image:: _media/image28b.png
 .. image:: _media/image28c.png
+.. image:: _media/image28b.png
 
 Click on **Statistics Collection** section of the device menu. We've enabled statistics collection which tells the BIG-IP to send stats to the BIG-IQ Data Collection Device (DCD). 
 
