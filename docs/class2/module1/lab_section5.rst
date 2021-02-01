@@ -7,7 +7,7 @@ BIG-IP Configuration/Stats
 Let's return to the BIG-IP web UI by clicking on the first tab in Firefox.
 
 We defined a password and SSH certificate for the **admin** user when we sent the DO declaration, thus you'll be
-asked to log in again. Log in using the **admin** username and the **Agility2020Orlando!** password.
+asked to log in again. Log in using the **admin** username and the **f5agility!** password.
 
 .. image:: _media/image29.png
 

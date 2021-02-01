@@ -43,7 +43,7 @@ errors were detected prior to processing the payload.
 
 .. image:: _media/image7b.png
 
-To monitor the deployment task itself, we'll query the link to the task tha was provided in the
+To monitor the deployment task itself, we'll query the link to the task that was provided in the
 last response. We configured Postman to use a variable to store the URI. Click the **View Deploy
 App Task Status** item in the collection list. 
 

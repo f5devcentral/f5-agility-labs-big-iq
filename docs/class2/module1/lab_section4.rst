@@ -14,11 +14,12 @@ Click the checkbox next to the BIG-IP. You will see a bit of information listed 
 
 .. image:: _media/image26.png
 
-Click on the **Management, LTM, ASM, AFM, SSM** link under **Services** column. This will load the device's services menus (the *Importing Services* task may still be running). Scroll through the list and see that LTM (ADC services), ASM (WAF), AFM (Firewall) and SSM (Shared Security, which is a management module) services are enabled. BIG-IQ allows you to specify which modules on the BIG-IP are managed by the CM; we've selected all the modules we're provisioning.
+Click on the device name itself to enter the device properties page.
 
-.. image:: _media/image27.png
+Clicking on the **Health** and **Properties** sections to view more information about the imported BIG-IP.
 
-.. image:: _media/image28.png
+.. image:: _media/image28c.png
+.. image:: _media/image28b.png
 
 Click on **Statistics Collection** section of the device menu. We've enabled statistics collection which tells the BIG-IP to send stats to the BIG-IQ Data Collection Device (DCD). 
 
@@ -26,9 +27,10 @@ Click on **Statistics Collection** section of the device menu. We've enabled sta
 
 .. image:: _media/image28a.png
 
-Clicking on the **Health** and **Properties** sections to view more information about the imported BIG-IP.
+Click on the **Services** section. This will show the device's services menus (the *Importing Services* task may still be running). Scroll through the list and see that LTM (ADC services), ASM (WAF), AFM (Firewall) and SSM (Shared Security, which is a management module) services are enabled. BIG-IQ allows you to specify which modules on the BIG-IP are managed by the CM; we've selected all the modules we're provisioning.
 
-.. image:: _media/image28b.png
-.. image:: _media/image28c.png
+.. image:: _media/image27.png
+
+.. image:: _media/image28.png
 
 In the next section, we'll review the BIG-IP's configuration.

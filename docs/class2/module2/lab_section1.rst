@@ -5,14 +5,16 @@ Pre-AS3 BIG-IP Configuration Review
 -----------------------------------
 
 AS3 allows us to define an entire application configuration, including security policies, in a single
-API call. AS3 declarations allow an app administrator to specify what should be configured and not
-how. The AS3 API will build the necessary components to ensure the full configuration is deployed. 
+API call. AS3 declarations allow an app administrator to focus on **what** should be configured and not
+worry about **how**. The AS3 API will build the necessary components to ensure the full configuration 
+is deployed. If there is an error while deploying an AS3 application service, the entire configuration
+gets rolled back, greatly reducing the risk of failed deployments.
 
 Return to Firefox and click on the first tab to return to the BIG-IP web UI.
 
 .. image:: _media/image1.png
 
-Log in using **admin** / **Agility2020Orlando!** credentials.
+Log back into the TMUI if not already.
 
 .. image:: _media/image2.png
 
@@ -43,7 +45,7 @@ on the BIG-IP.
 
 .. image:: _media/image8.png
 
-Next, navigate to **Security** -> Network Firewall. The default tab, *Active Rules*, shows that
+Next, navigate to **Security** -> **Network Firewall**. The default tab, *Active Rules*, shows that
 there are no rules being enforced. 
 
 .. image:: _media/image9.png

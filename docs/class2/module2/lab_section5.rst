@@ -20,12 +20,12 @@ errors were detected prior to processing the payload.
 Click on the **View Deploy App with Firewall Policy** item in the requests list. Click **Send** to query
 the task status. You may see an "in progress" message such as the one below.
 
-.. image:: _media/image27.png
+.. image:: _media/image28.png
 
 Click **Send** every few seconds to refresh the task status. Eventually, you should see a 200 OK success message
 from the AS3 API. This indicates that the application was deployed successfully.
 
-.. image:: _media/image28.png
+.. image:: _media/image27.png
 
 Return to Firefox and click on the second tab to return to BIG-IQ. Click the **Applications** tab at the top of
 the UI, then click the **Applications** item from the menu on the left side of the page. This returns us to the

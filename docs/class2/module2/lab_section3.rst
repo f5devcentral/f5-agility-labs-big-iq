@@ -21,7 +21,7 @@ Switch to the root user context using the following command:
 
 ``sudo su -``
 
-You'll need to supply the **Agility2020Orlando!** password when prompted.
+You'll need to supply the **f5agility!** password when prompted.
 
 .. image:: _media/image53b.png
 
