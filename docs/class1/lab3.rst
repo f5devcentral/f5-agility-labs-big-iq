@@ -46,7 +46,7 @@ You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-la
 
 |image48|
 
-7. Login on as **paul** (paul\\paul)* to create the new application. Then click on *Sign In*
+7. Login on as **david** (david\\david)* to create the new application. Then click on *Sign In*
 
 |image49|
 
@@ -58,23 +58,23 @@ You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-la
 
 |image30|
 
-10. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then select *paul-iq*. Click on *NEXT*
+10. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then select *david-iq*. Click on *NEXT*
 
    |image31|
 
 11. **SURVEY**: Enter below information regarding your application service definition. Click on *NEXT*
    
-+------------+-------------------------------+
-| APP NAME:  | MyAppDeployedWithAnsibleTower |
-+------------+-------------------------------+
-| APP TYPE:  | http_app or waf_app           |
-+------------+-------------------------------+
-| SERVICE IP:| 10.1.10.125                   |
-+------------+-------------------------------+
-| NODES:     | 10.1.20.120 and 10.1.20.121   |
-+------------+-------------------------------+
-
-
++-------------------+-------------------------------+
+| TENANT NAME       | AnsibleTower                  |
++-------------------+-------------------------------+
+| APP SERVICE NAME  | MyApp139                      |
++-------------------+-------------------------------+
+| APP TYPE          | http_app or waf_app           |
++-------------------+-------------------------------+
+| SERVICE IP        | 10.1.10.139                   |
++-------------------+-------------------------------+
+| NODES             | 10.1.20.120 and 10.1.20.121   |
++-------------------+-------------------------------+
 
    |image32|
 
@@ -94,7 +94,7 @@ You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-la
 
     |image35|
 
-15. From within the LAMP server RDP/noVNC session, logon on **BIG-IQ** as **paul** *(paul\\paul)*
+15. From within the LAMP server RDP/noVNC session, logon on **BIG-IQ** as **david** *(david\\david)*
     by opening a browser and go to: ``https://10.1.1.4`` or directly via
     the TMUI as shown below.
     Go to Application tab and check the application is displayed and analytics
@@ -102,23 +102,13 @@ You can go on the GitHub repository https://github.com/f5devcentral/f5-big-iq-la
    
     |image52|
 
-16. Select *Unknown Applications* Application tile
+16. Select *AnsibleTower* Application tile,
 
    |image36|
 
-17. Select *MyAppDeployedWithAnsibleTower_M...* Application Service. 
+17. Select *AnsibleTower_MyApp139* Application Service. 
 
     |image37|
-
-**! Warning**
-
-*Starting 7.0, BIG-IQ displays AS3 application services created using
-the AS3 Declare API as Unknown Applications. You can move those
-application services using the GUI, the *`Move/Merge
-API <https://clouddocs.f5.com/products/big-iq/mgmt-api/latest/ApiReferences/bigiq_public_api_ref/r_public_api_references.html>`__* or
-create it directly into Application in BIG-IQ using the *`Deploy
-API <https://clouddocs.f5.com/products/big-iq/mgmt-api/latest/ApiReferences/bigiq_public_api_ref/r_public_api_references.html>`__* to
-define the BIG-IQ Application name.*
 
 18. Review the HTTP traffic analytics page.
 
@@ -129,7 +119,7 @@ Exercise 3.2 – Application Deletion
 
 The application owner has informed Paul that the application is no longer needed and needs to be deleted. Paul will use an AS3 declaration and BIG-IQ to remove the previously added application from the BIG-IPs. 
 
-1. Return to *AWX (Ansible Tower)* and if needed log back in as **paul** *(paul\\paul)*  
+1. Return to *AWX (Ansible Tower)* and if needed log back in as **david** *(david\\david)*  
    Navigate to the **Templates** page and click on *(Agility 2020) Delete_AS3_App*
 
    |image39|
@@ -140,7 +130,7 @@ The application owner has informed Paul that the application is no longer needed
    |image40|
 
 3. **CREDENTIAL**: Select *BIG-IQ Creds* as **Credential Type**. Then
-   select *paul-iq*. Click on *NEXT*
+   select *david-iq*. Click on *NEXT*
 
 
    |image41|
@@ -148,9 +138,9 @@ The application owner has informed Paul that the application is no longer needed
 4. **SURVEY**: Enter below information regarding your application
    service definition. Click on *NEXT.*
 
-+-----------+-------------------------------+
-| APP NAME: | MyAppDeployedWithAnsibleTower |
-+-----------+-------------------------------+
++-------------+-------------------------------+
+| TENANT NAME | AnsibleTower                  |
++-------------+-------------------------------+
 
    |image42|
 
@@ -171,9 +161,9 @@ The application owner has informed Paul that the application is no longer needed
 
    |image45|
 
-8. Logon on **BIG-IQ** as **paul** *(paul\\paul)*, go to main Application page 
+8. Logon on **BIG-IQ** as **david** *(david\\david)*, go to main Application page 
     
-9. Select *Unknown Applications* Application tile
+9. Select *AnsibleTower* Application tile
 
    |image46|
 
