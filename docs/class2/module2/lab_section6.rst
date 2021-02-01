@@ -33,6 +33,10 @@ You will be asked a series of questions. Use the following values below; for all
 
 ``Virtual Server URL []: https://10.1.10.11``
 
+Your screen should appear as below:
+
+.. image:: _media/image67c.png
+
 With the tester configured, run the actual test with the following command: 
 
 ``sudo f5-waf-tester``
