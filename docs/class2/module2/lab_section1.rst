@@ -45,7 +45,7 @@ on the BIG-IP.
 
 .. image:: _media/image8.png
 
-Next, navigate to **Security** -> Network Firewall. The default tab, *Active Rules*, shows that
+Next, navigate to **Security** -> **Network Firewall**. The default tab, *Active Rules*, shows that
 there are no rules being enforced. 
 
 .. image:: _media/image9.png
