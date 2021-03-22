@@ -55,7 +55,7 @@ they are not configured for traffic flow.
 .. image:: _media/image10.png
 .. image:: _media/image11.png
 
-NOTE: The Advanced Firewall Manager (AFM) and Application Security Manager (ASM) security modules would be configured in a **Security** section, but since those modules are not provisioned, the menus are not accessible at this time.
+NOTE: The Advanced Firewall Manager (AFM) and Application Security Manager (ASM) security modules would be viewed and configured under the **Security** menu, but since those modules are not yet provisioned, those configurations are not presented in the menu.
 
 Feel free to navigate through **Local Traffic** -> **Virtual Servers**. The **Pools** and **Nodes** sections will also be empty. 
 
