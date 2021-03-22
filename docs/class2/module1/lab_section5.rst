@@ -16,7 +16,7 @@ after logging in.
 
 .. image:: _media/image30.png
 
-Click on **System** -> **Resource Provisioning**. Notice that AFM and ASM are now provisioned.
+Click on **System** -> **Resource Provisioning**. Notice that AFM, ASM and iRulesLX are now provisioned.
 
 .. image:: _media/image31.png
 
