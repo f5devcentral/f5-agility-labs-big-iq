@@ -80,13 +80,11 @@ status. This page offers a way to track deployments and troubleshoot failures.
 .. image:: _media/image14b.png
 
 Let's head back to the first tab in Firefox and navigate to **Local Traffic** -> **Virtual Servers**.
-Is your list empty?!?!
+Is your list empty?!
 
 .. image:: _media/image15b.png
 
-That's because AS3 uses authentication partitions to separate logical configurations. Click the
-drop-down box on the top-right of the web UI and select **Juice_Shop** as the partition to
-which to change the view. You should see the application listed now. 
+That's because AS3 uses  partitions to separate logical configurations. Click the drop-down box on the top-right of the web UI and select **Juice_Shop** as the partition to which to change the view. You should see the application listed now. 
 
 .. image:: _media/image16b.png
 

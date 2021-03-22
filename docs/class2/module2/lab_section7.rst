@@ -1,7 +1,7 @@
 Web App with Firewall and WAF Policy Deployment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Back in Postman, single-click on the **Deploy App with Firewall Policy** to open the request in a new tab.
+Back in Postman, single-click on the **Deploy App with Firewall and WAF Policies** item to open the request in a new tab.
 
 .. image:: _media/image49.png
 
