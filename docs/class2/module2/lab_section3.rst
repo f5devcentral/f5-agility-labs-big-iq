@@ -47,8 +47,11 @@ You'll know the server is fully up when you see this message:
 
 .. image:: _media/image58b.png
 
-Leave your console window open so the app continues to run. It's useful to come back to the CLI,
-for any vulnerabilities triggered will be logged to the console output.
+Leave your console window open so the app continues to run. It's useful to come back to the CLI, for any vulnerabilities triggered will be logged to the console output.
+
+Finally, refresh the fourth tab in the browser to test connectivity directly to the app server. 
+
+.. image:: _media/nodetest.png
 
 Let's move forward with the AS3 configuration.
 
