@@ -41,10 +41,11 @@ Navigate to **Network** -> **Interfaces** to see that the interfaces are now UP 
 
 .. image:: _media/image37.png
 
-Notice that **Shared Objects** menu is now available. Under **Security**, we can now view and configure
-the ASM and AFM modules. Declarative On-boarding did not configure these modules themselves; it simply enabled them. 
+Under **Security**, we can now view and configure the ASM and AFM modules. Declarative On-boarding did not configure these modules themselves; it simply enabled them. 
 
 .. image:: _media/image39.png
+
+Notice that **Shared Objects** menu is now available. 
 
 .. image:: _media/image40.png
 
