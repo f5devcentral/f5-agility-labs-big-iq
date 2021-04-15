@@ -12,11 +12,7 @@ On the desktop, you will see icons for Firefox, Postman and several SSH hosts.
 
 .. image:: _media/image2.png
 
-We'll use Firefox to access the web interface of the BIG-IP and BIG-IQ appliances,
-as well as our test application. We'll use Postman to send API calls to the BIG-IQ
-for provisioning the BIG-IP's services and application configurations. We'll use the
-SSH host links to jump on the CLI of these devices in some exercises to see what's
-going on under the hood.
+We'll use Firefox to access the web interface of the BIG-IP and BIG-IQ appliances, as well as our test application. We'll use Postman to send API calls to the BIG-IQ for provisioning the BIG-IP's services and application configurations. We'll use the SSH host links to jump on the CLI of these devices in some exercises to see what's going on under the hood.
 
 Let's open Firefox and explore the BIG-IP.
 
@@ -39,10 +35,7 @@ You will be presented with the BIG-IP TMUI as shown below.
 
 .. image:: _media/image6a.png
 
-Navigate to **System** -> **Resource Provisioning** in the left navigation bar. Notice that LTM and iRulesLX
-are provisioned. We'll need the Advanced Firewall Manager (AFM) and the Application Security Manager (ASM)
-modules for our lab, **but do not provision them now.** We'll manage service provisioning via our DO 
-declaration. 
+Navigate to **System** -> **Resource Provisioning** in the left navigation bar. Notice that LTM is provisioned. We'll need the Advanced Firewall Manager (AFM) and the Application Security Manager (ASM) modules for our lab, **but do not provision them now.** We'll manage service provisioning via our DO declaration. 
  
  .. image:: _media/image7.png
 
@@ -62,7 +55,7 @@ they are not configured for traffic flow.
 .. image:: _media/image10.png
 .. image:: _media/image11.png
 
-NOTE: The Advanced Firewall Manager (AFM) and Application Security Manager (ASM) security modules would be configured in a **Security** section, but since those modules are not provisioned, the menus are not accessible at this time.
+NOTE: The Advanced Firewall Manager (AFM) and Application Security Manager (ASM) security modules would be viewed and configured under the **Security** menu, but since those modules are not yet provisioned, those configurations are not presented in the menu.
 
 Feel free to navigate through **Local Traffic** -> **Virtual Servers**. The **Pools** and **Nodes** sections will also be empty. 
 
