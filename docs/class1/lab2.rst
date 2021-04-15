@@ -32,8 +32,7 @@ clone the default AS3 templates and use them for your custom needs.
 
 |image19|
 
-.. note:: Collect Response Code, Collect Method, and Collect Operating System and Browser 
-          are already enabled by default in the AS3 schema.
+.. note:: Collect Response Code is already enabled by default in the AS3 schema.
 
 4. Click **Save & Close**.
 

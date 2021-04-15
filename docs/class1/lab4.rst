@@ -188,14 +188,6 @@ Exercise 4.2 – Resolve conflicts in the Silo
 
 |image63|
 
-Ignore the following diff:
-
-1 "cm": {
-
-2 "silo": "silolab"
-
-3 },
-
 The values of the Accept XFF and Insert X-Forwarded-For are different.
 This is why the original import before adding to a Silo failed.
 
