@@ -15,7 +15,7 @@ Exercise 1.1 – Import AS3 templates
 2. Go to Applications > Application Templates and review the top section
       which is titled **AS3 Templates**.
 
-A new BIG-IQ v7.x deployment will NOT include AS3 templates out of the
+A new BIG-IQ v8.x deployment will NOT include AS3 templates out of the
 box. If you want to start using AS3 templates which are provided by F5,
 then those AS3 templates can be found through the following
 link: https://github.com/f5devcentral/f5-big-iq
@@ -107,8 +107,8 @@ Paula.
 6. **Paula** is assigned to the
    exiting Application Creator VMware custom role. Select it and scroll
    down to AS3 Templates. As you can see, **Paula** does not have
-   permission to deploy an AS3 application
-   using AS3-F5-HTTPS-offload-lb-existing-cert-template.
+   permission to deploy an AS3 application using the 
+   AS3-F5-HTTPS-offload-lb-existing-cert-template-big-iq-default-v1 template.
 
 |image8|
 

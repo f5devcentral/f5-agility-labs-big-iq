@@ -1,7 +1,7 @@
 Lab 4: LTM conflict resolution: Silo in BIG-IQ
 ----------------------------------------------
 
-**New BIG-IQ v7.1 Features**
+**New Features introduced in BIG-IQ v7.1**
 
 BIG-IP configuration naming conventions are not consistent within many
 customer environments. It is common to find similar names reused across
@@ -125,7 +125,7 @@ Exercise 4.1 – Import a device into a Silo
    not overwrite BIG-IP or BIG-IQ for the conflicting HTTP profile,
    click on \ **Resolve Conflicts Later**.
 
-7. Select \ **Create a New Silo** and name it silolab then
+7. Select \ **Create a New Silo** and name it *silolab* then
    click \ **Continue**
 
 ..
@@ -188,14 +188,6 @@ Exercise 4.2 – Resolve conflicts in the Silo
 
 |image63|
 
-Ignore the following diff:
-
-1 "cm": {
-
-2 "silo": "silolab"
-
-3 },
-
 The values of the Accept XFF and Insert X-Forwarded-For are different.
 This is why the original import before adding to a Silo failed.
 
@@ -205,7 +197,7 @@ conflicts from BIG-IQ and then remove this device from its Silo, and
 eventually re-import back into the default Silo.
 
 Let’s resolve the conflict by renaming the offending profile
-from silo-lab-http-profile to silo-lab-http-profile2.
+from *silo-lab-http-profile* to *silo-lab-http-profile2*.
 
 |image64|
 
@@ -249,7 +241,7 @@ Click \ **Create**.
 |image69|
 
 10. Navigate to the Configuration tab > Local Traffic > Profile and
-    filter on silo-lab-http-profile to confirm the HTTP profile was
+    filter on *silo-lab-http-profile* to confirm the HTTP profile was
     renamed. The original conflict that prevented import into the
     default Silo has now been fixed, however the SJC BIG-IP device is
     still in its own Silo. The Next steps will remove the device from
@@ -281,7 +273,8 @@ Click on \ **Continue**.
 
 |image73|
 
-Click on \ **Remove**. You may need to refresh the page to see that it
+Click on \ **Remove**. Note that it may take a few minutes for BIG-IQ to 
+fully remove the device. You may need to refresh the page to see that it
 has been deleted.
 
 |image74|
@@ -296,8 +289,10 @@ has been deleted.
 
 |image75|
 
+Click **Add** at the bottom of the screen to add the device. 
+
 4. The Service configuration & Statistic monitoring window will open.
-   Select LTM and deselect DNS and AFM stats.
+   Select LTM and deselect BIG-IP DNS and AFM Statistics Collection.
 
 |image76|
 
