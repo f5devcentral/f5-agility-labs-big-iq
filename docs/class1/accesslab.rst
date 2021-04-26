@@ -41,20 +41,3 @@ In order to complete this lab, you will find 2 ways to access the different syst
 
 .. |udf_bigiq_tmui| image:: images/udf_bigiq_tmui.png
    :scale: 40%
-
-BIG-IQ User Interface
----------------------
-
-Once you connect to BIG-IQ, you can navigate in the following tabs:
-
-- **Applications** - Application Management (Legacy, AS3) and Cloud Environment
-- **System** - Manage all aspects for BIG-IQ and DCDs.
-- **Devices** - Discover, Import, Create, Onboard (DO) and Manage BIG-IP devices.
-- **Deployment** - Manage evaluation task and deployment for Configuration Management (none AS3)
-- **Configuration** - ADC and Security Object Management (ASM, AFM, APM, DDOS, SSLo config/monitoring)
-- **Monitoring** - Event collection per device, statistics monitoring, iHealth reporting integration, alerting, and audit logging.
-
-|welcomebigiq|
-
-.. |welcomebigiq| image:: images/welcomebigiq.png
-   :scale: 40%
