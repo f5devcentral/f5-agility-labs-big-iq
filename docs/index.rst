@@ -21,5 +21,5 @@ Welcome
 - `BIG-IQ Knowledge Center`_
 
 .. _F5 BIG-IQ Centralized Management Lab: ../../big-iq-cloud-edition/html/
-.. _BIG-IQ Knowledge Center: https://support.f5.com/csp/knowledge-center/software/BIG-IQ?module=BIG-IQ%20Centralized%20Management&version=7.1.0
+.. _BIG-IQ Knowledge Center: https://support.f5.com/csp/knowledge-center/software/BIG-IQ?module=BIG-IQ%20Centralized%20Management
 

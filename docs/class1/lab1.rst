@@ -65,8 +65,9 @@ Paula.
     the TMUI as shown above. Paula represents an App owner. Note that the logout button is in the upper
     right-hand corner of the UI.
 
-2. In the **Applications** page click on **Create** to create an
-   Application Service
+2. In the **Applications** page click on **Create** to create an Application Service
+
+.. warning:: You will notice that the template is not available. If we want **paula** to deploy this template, we first need to have those templates assigned to her via an administrator. 
 
 |image5|
 
@@ -84,11 +85,7 @@ Paula.
 | -  Template Type = Select AS3-F5-HTTPS-offload-lb-existing-cert-template-big-iq-default-v1 [AS3] |
 +--------------------------------------------------------------------------------------------------+
 
-**Warning**
 
-   You will notice that the template is not available. If we want Paula
-   to deploy services using this template, we first need to have those templates
-   assigned to her via an administrator.
 
 3. Logout as **paula** and login to BIG-IQ as **david**. (if asked: Leave site? Select: Leave)
 
