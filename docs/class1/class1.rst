@@ -1,4 +1,4 @@
-F5 Agility 2022: ADC Automation with BIG-IQ 8.2
+F5 Agility 2021: ADC Automation with BIG-IQ 8.0
 ===============================================
 
 Welcome to the BIG-IQ ADC Automation lab.
