@@ -24,7 +24,7 @@ Hosts
   * Management: 10.1.1.9
   * Internal: 10.1.20.225
 
-* BIG-IP 16.0
+* BIG-IP 17.0
 
   * Credentials: admin / f5agility! \| root / f5agility!
   * Management: 10.1.1.4
@@ -32,13 +32,13 @@ Hosts
   * External: 10.1.10.11
   * Internal: 10.1.20.10
 
-* BIG-IQ 8.0 Central Manager (CM)
+* BIG-IQ 8.2 Central Manager (CM)
 
   * Credentials: admin / f5agility! \| root / f5agility!
   * Management: 10.1.1.5
   * Internal: 10.1.20.11
 
-* BIG-IQ 8.0 Data Collection Device (DCD)
+* BIG-IQ 8.2 Data Collection Device (DCD)
 
   * Credentials: admin / f5agility! \| root / f5agility!
   * Management: 10.1.1.6
