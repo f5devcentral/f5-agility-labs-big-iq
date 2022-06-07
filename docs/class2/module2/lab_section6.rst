@@ -13,7 +13,7 @@ You should be automatically logged in the CLI as shown below.
 
 Next, install the tool using the following command: 
  
-``sudo pip install git+https://github.com/f5devcentral/f5-waf-tester.git`` 
+``sudo pip install git+https://github.com/aknot242/f5-waf-tester.git`` 
 
 Enter the password **f5agility!** if prompted.
 

@@ -1,4 +1,4 @@
-F5 Agility 2021: Security Automation with BIG-IQ 8.0
+F5 Agility 2022: Security Automation with BIG-IQ 8.2
 ====================================================
 
 What is Declarative Onboarding?
