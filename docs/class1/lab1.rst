@@ -20,6 +20,8 @@ box. If you want to start using AS3 templates which are provided by F5,
 then those AS3 templates can be found through the following
 link: https://github.com/f5devcentral/f5-big-iq
 
+.. note:: If you receive a warning prompt that software updates are no longer provided for Ubuntu when first logging into the Lamp server. Click **OK** to bypass
+
 .. note:: The F5 default AS3 BIG-IQ templates are already imported in the lab environment blueprint.
 
 **Import AS3 BIG-IQ templates**
