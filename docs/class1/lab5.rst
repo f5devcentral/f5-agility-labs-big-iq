@@ -258,3 +258,4 @@ Then click on ``legacy-app-service`` Application Service.
   :scale: 40%
   :align: center
 
+**Congratulations!** This is the end of the labs for **ADC Automation with BIG-IQ 8.1**
